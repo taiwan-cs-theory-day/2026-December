@@ -1,6 +1,6 @@
 {
   "about": [
-    "NYCU Theory Day 2026 is a two-day satellite event held prior to the 43rd Workshop on Combinatorial Mathematics and Computation Theory (CMCT), a long-standing domestic workshop in Taiwan, which is hosted this year at National Yang Ming Chiao Tung University (NYCU), Hsinchu (Chiao-Tung) Campus. The NYCU Hsinchu Chiao-Tung Campus is located adjacent to Taiwan’s major science park and semiconductor industry hub, placing NYCU in a uniquely vibrant research environment where foundational theory and cutting-edge technology closely interact and reinforce one another.",
+    "Theory Day 2026 is a two-day satellite event held prior to the 43rd Workshop on Combinatorial Mathematics and Computation Theory (CMCT), a long-standing domestic workshop in Taiwan, which is hosted this year at National Yang Ming Chiao Tung University (NYCU), Hsinchu (Chiao-Tung) Campus. The NYCU Hsinchu Chiao-Tung Campus is located adjacent to Taiwan’s major science park and semiconductor industry hub, placing NYCU in a uniquely vibrant research environment where foundational theory and cutting-edge technology closely interact and reinforce one another.",
     "The primary goal of NYCU Theory Day is to provide a forum for international and domestic researchers in theoretical computer science to meet and exchange ideas, to expose students to frontier research in theory, and to encourage the talents to pursue their careers in the future. The theory day events have taken places in Taiwan since 2016. This one marks the inaugural edition of NYCU Theory Day."
   ],
   "eventInformation": [
@@ -8,10 +8,9 @@
     { "label": "Location", "value": "Engineering Building III 022, Hsinchu Chiaotung Campus, NYCU" }
   ],
   "speakerCategories": [
-    { "key": "keynote", "label": "Keynote Speakers" },
-    { "key": "plenary", "label": "Invited Speakers" },
-    { "key": "others", "label": "Invited Speakers" },
-    { "key": "panel", "label": "Panel Speakers" }
+    { "key": "keynote", "label": "Keynote Lecture" },
+    { "key": "plenary", "label": "Invited Talks" }
+   
   ],
   "localOrganizers": [
     "Po-An Chen, Institute of Information Management, NYCU.",

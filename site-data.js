@@ -83,7 +83,7 @@
       tabTitle: (row.speaker || '').split('/')[0].trim(),
       photo: row.image_link || '',
       talkTitle: row.talktitle || '',
-      type: row.category === 'keynote' ? 'Keynote Speaker' : 'Invited Speaker'
+      type: row.category === 'keynote' ? 'Keynote Lecture' : 'Invited Talks'
     })));
   }
 
