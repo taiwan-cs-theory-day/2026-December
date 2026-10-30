@@ -36,21 +36,13 @@ async function initSiteContent() {
   fillList('local-organizers', content.localOrganizers);
   fillList('special-thanks', content.specialThanks);
 
-  const speakerSections = document.getElementById('speaker-category-list');
-  if (speakerSections) {
+  const speakerList = document.getElementById('speaker-category-list');
+  if (speakerList) {
     const speakers = await window.siteData.loadSpeakers();
-    speakerSections.replaceChildren(...content.speakerCategories.map(category => {
-      const section = document.createElement('section');
-      const heading = document.createElement('h3');
-      const list = document.createElement('ul');
-      heading.textContent = category.label;
-      speakers.filter(speaker => speaker.category === category.key).forEach(speaker => {
-        const item = document.createElement('li');
-        item.textContent = `${speaker.tabTitle}, ${speaker.affiliation}`;
-        list.appendChild(item);
-      });
-      section.append(heading, list);
-      return section;
+    speakerList.replaceChildren(...speakers.map(speaker => {
+      const item = document.createElement('li');
+      item.textContent = `${speaker.tabTitle}, ${speaker.affiliation}`;
+      return item;
     }));
   }
 

@@ -1,31 +1,22 @@
 {
   "about": [
-    "NYCU Theory Day 2026 is a two-day satellite event held prior to the 43rd Workshop on Combinatorial Mathematics and Computation Theory (CMCT), a long-standing domestic workshop in Taiwan, which is hosted this year at National Yang Ming Chiao Tung University (NYCU), Hsinchu (Chiao-Tung) Campus. The NYCU Hsinchu Chiao-Tung Campus is located adjacent to Taiwan’s major science park and semiconductor industry hub, placing NYCU in a uniquely vibrant research environment where foundational theory and cutting-edge technology closely interact and reinforce one another.",
-    "The primary goal of NYCU Theory Day is to provide a forum for international and domestic researchers in theoretical computer science to meet and exchange ideas, to expose students to frontier research in theory, and to encourage the talents to pursue their careers in the future. The theory day events have taken places in Taiwan since 2016. This one marks the inaugural edition of NYCU Theory Day."
+    "Taiwan CS Theory Day in Hsinchu is a continuing event series that aims to bring together international and domestic researchers in theoretical computer science to meet, exchange ideas, and share recent developments in the field. Through this event, we also aim to expose students to frontier research in theoretical computer science and to inspire the next generation of researchers to pursue advanced study and careers in the future. This edition marks the second event in the series, building upon the previous edition known as NYCU Theory Day. With this event, we hope to connect the local research community with the broader theoretical computer science community in Taiwan and beyond.",
+    "The NYCU Hsinchu (Chiaotung) Campus is located adjacent to the Hsinchu Science Park, one of the world's major centers for the semiconductor and high-tech industries. This places NYCU in a uniquely vibrant research environment, where fundamental questions in computation meet the technologies that shape the future.",
+    "The tradition of Taiwan Theory Day events dates back to 2016 (see https://theoryday.github.io/), providing a forum for Taiwan's theoretical computer science community to gather and exchange ideas. We are delighted to contribute to this tradition by hosting Theory Day events regularly at NYCU, and we warmly welcome researchers and students from Taiwan and around the world to join us in Hsinchu."
   ],
   "eventInformation": [
-    { "label": "Date", "value": "December, 2026" },
-    { "label": "Location", "value": "Engineering Building III 022, Hsinchu Chiaotung Campus, NYCU" }
+    { "label": "Date", "value": "December 8-10, 2026" },
+    { "label": "Location", "value": "Engineering Building III & IV, Hsinchu Chiaotung Campus, NYCU" }
   ],
   "speakerCategories": [
-    { "key": "keynote", "label": "Keynote Speakers" },
-    { "key": "plenary", "label": "Invited Speakers" },
-    { "key": "others", "label": "Invited Speakers" },
-    { "key": "panel", "label": "Panel Speakers" }
+    { "key": "diskeynote", "label": "Distinguished Keynote" },
+    { "key": "keynote", "label": "Keynote Lectures" },
+    { "key": "plenary", "label": "Plenary Talks" }
+   
   ],
   "localOrganizers": [
-    "Po-An Chen, Institute of Information Management, NYCU.",
-    "Yi-Ting Chen, Department of Computer Science, NYCU.",
-    "Ting-Jung Chang, Department of Computer Science, NYCU.",
-    "Yung-Ju Stanley Chang, Department of Computer Science, NYCU.",
-    "Ping-Chun Hsieh, Department of Computer Science, NYCU.",
-    "Mong-Jen Kao, Department of Computer Science, NYCU.",
-    "Yu-Chun Yen, Department of Computer Science, NYCU."
   ],
   "specialThanks": [
-    "Wing-Kai Hon, Department of Computer Science, National Tsing-Hua University.",
-    "Ya-Chun Liang, Department of Computer Science, National Tsing-Hua University.",
-    "Hao-Tsung Yang, Department of Computer Science and Information Engineering, National Central University."
   ],
   "registration": [
     "Registration is in general free of charge for all participants. For non-student participants, if you would like to sponsor this event, we welcome sponsorship registration as well.",

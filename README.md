@@ -6,7 +6,7 @@ This repository contains the static website for NYCU Theory Day 2026. The goal i
 
 Use these files as the primary content sources:
 
-- `data/Theoryday_2026_DEC.csv` contains speaker profile data: speaker name, category, email, affiliation, title, expertise, talk title, abstract, and the talk date/time. This is the main data source for the speaker pages and speaker lists.
+- `data/Theoryday_2026_DEC.csv` contains speaker profile data: speaker name, category, affiliation, title, expertise, talk title, abstract, and the talk date/time. This is the main data source for the speaker pages and speaker lists.
 - `data/schedule.csv` contains schedule-only rows: day, date, time, type, session title, and presenter/organizer labels. This file is the source of truth for all session timings and dates.
 - `data/site-content.json` contains reusable text like About, event information, organizer lists, sponsor acknowledgements, and category labels. Do not rename keys.
 
@@ -22,8 +22,8 @@ Use these files as the primary content sources:
 ### CSV example
 
 ```csv
-Speaker,category,email,image_link,affiliation,title,expertise,talktitle,abstract,talk_date,talk_start_time,talk_end_time
-Jane Smith,keynote,jane@example.edu,images/speakers/jane-smith.jpg,University of X,Professor,"Algorithms / Optimization","A Useful Talk","A short abstract about the talk.",4/21,14:10,15:10
+Speaker,category,image_link,affiliation,title,expertise,talktitle,abstract,talk_date,talk_start_time,talk_end_time
+Jane Smith,keynote,images/speakers/jane-smith.jpg,University of X,Professor,"Algorithms / Optimization","A Useful Talk","A short abstract about the talk.",4/21,14:10,15:10
 ```
 
 ## Local preview
