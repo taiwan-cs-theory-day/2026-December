@@ -13,8 +13,7 @@ async function initSpeakers() {
   let activeCategory = content.speakerCategories[0]?.key || '';
 
   function speakersFor(category) {
-    return speakers.filter(speaker => speaker.category === category)
-      .sort((first, second) => first.tabTitle.localeCompare(second.tabTitle));
+    return speakers.filter(speaker => speaker.category === category);
   }
 
   function selectSpeaker(speaker, button) {
@@ -25,12 +24,6 @@ async function initSpeakers() {
     document.getElementById('speaker-title').textContent = speaker.title;
     document.getElementById('speaker-affiliation').textContent = speaker.affiliation;
     document.getElementById('speaker-expertise').textContent = speaker.expertise || 'TBA';
-    const email = document.getElementById('speaker-email');
-    if (email) {
-      email.textContent = speaker.email;
-      email.href = speaker.email ? `mailto:${speaker.email}` : '#';
-      email.hidden = !speaker.email;
-    }
     const type = document.getElementById('speaker-type');
     if (type) type.textContent = speaker.type;
     const hasDetails = Boolean(speaker.talkTitle || speaker.abstract);

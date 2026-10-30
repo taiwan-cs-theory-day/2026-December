@@ -11,7 +11,7 @@ const requiredContentKeys = [
   'localOrganizers',
   'specialThanks'
 ];
-const validSpeakerCategories = new Set(['keynote', 'plenary', 'others', 'panel']);
+const validSpeakerCategories = new Set(['keynote', 'diskeynote', 'plenary', 'others', 'panel']);
 
 function parseCSV(text) {
   const rows = [];
@@ -147,11 +147,6 @@ function main() {
       }
     } else if (category !== 'panel') {
       warnings.push(`Speaker row ${rowNumber} is missing image_link.`);
-    }
-
-    const email = String(row.email || '').trim();
-    if (row.speaker && !email && category !== 'panel') {
-      warnings.push(`Speaker row ${rowNumber} is missing email.`);
     }
 
     if (category) {

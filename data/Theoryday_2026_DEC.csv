@@ -1,8 +1,10 @@
-Speaker,category,email,image_link,affiliation,title,expertise,talktitle,abstract,talk_date,talk_start_time,talk_end_time
-Mikkel Thorup,keynote, mikkel2thorup@gmail.com,images/speakers/MikkelThorup.jpg,University of Copenhagen,Professor,,,,,,
-Jarosław (Jarek) Byrka,keynote,jby@cs.uni.roc.pl,images/speakers/byrka.jpg,University of Wrocław,Professor,,,,,,
-Ho-Lin Chen,keynote,holinchen@ntu.edu.tw,images/speakers/holinchen_l.jpg,National Taiwan University,Professor,,,,,,
-Eunjin Oh,plenary, eunjin.oh@postech.ac.kr  ,images/speakers/Eunjin.jpg,Pohang University of Science and Technology (POSTECH),Associate Professor,,,,,,
-Hsiang-Hsuan Liu,plenary, h.h.liu@uu.nl,images/speakers/Elison.jpg, Utrecht University,Assistant Professor ,,,,,,
-Bob Krekelberg,plenary,b.h.a.f.krekelberg@uu.nl,images/speakers/Bob.jpg, Utrecht University,PhD Candidate  ,,,,,,
-Ben Tsun-Ming Cheung,plenary,bencheung@cs.nthu.edu.tw,images/speakers/Ben.png,National Tsing Hua University,Assistant Professor,,,,,,
+Speaker,category,image_link,affiliation,title,expertise,talktitle,abstract,talk_date,talk_start_time,talk_end_time
+Jarosław (Jarek) Byrka,keynote,images/speakers/Jarek.jpg,University of Wrocław,Professor,,,,,,
+Ho-Lin Chen,keynote,images/speakers/holinchen_l.jpg,National Taiwan University,Professor,,,,,,
+Mikkel Thorup,diskeynote,images/speakers/MikkelThorup.jpg,University of Copenhagen,Professor,,,,,,
+
+Li-Hsuan Chen,plenary,,National Chung-Cheng University,Assistant Professor,,,,,,
+Ben Tsun-Ming Cheung,plenary,images/speakers/Ben.png,National Tsing-Hua University,Assistant Professor,,,,,,
+Hsiang-Hsuan Liu,plenary,images/speakers/Elison.jpg,Utrecht University,Assistant Professor ,,,,,,
+Bob Krekelberg,plenary,images/speakers/Bob.jpg,Utrecht University,PhD Candidate  ,,,,,,
+Eunjin Oh,plenary,images/speakers/Eunjin.jpg,POSTECH,Associate Professor,,,,,
