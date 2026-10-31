@@ -21,9 +21,19 @@ async function initSpeakers() {
     button.classList.add('active');
     document.getElementById('speaker-photo').src = speaker.photo;
     document.getElementById('speaker-name').textContent = speaker.name;
-    document.getElementById('speaker-title').textContent = speaker.title;
     document.getElementById('speaker-affiliation').textContent = speaker.affiliation;
-    document.getElementById('speaker-expertise').textContent = speaker.expertise || 'TBA';
+    document.getElementById('speaker-title').textContent = speaker.title;
+    const subtitle = document.getElementById('speaker-subtitle');
+    if (subtitle) {
+      subtitle.textContent = speaker.subtitle || '';
+      subtitle.style.display = speaker.subtitle ? 'block' : 'none';
+    }
+    const honor = document.getElementById('speaker-honor');
+    if (honor) {
+      honor.textContent = speaker.honor || '';
+      honor.style.display = speaker.honor ? 'block' : 'none';
+    }
+    document.getElementById('speaker-expertise').textContent = speaker.expertise; // || 'TBA';
     const type = document.getElementById('speaker-type');
     if (type) type.textContent = speaker.type;
     const hasDetails = Boolean(speaker.talkTitle || speaker.abstract);

@@ -1,9 +1,14 @@
-Speaker,category,image_link,affiliation,title,expertise,talktitle,abstract,talk_date,talk_start_time,talk_end_time
-Jarosław (Jarek) Byrka,keynote,images/speakers/Jarek.jpg,University of Wrocław,Professor,,,,,,
-Ho-Lin Chen,keynote,images/speakers/holinchen_l.jpg,National Taiwan University,Professor,,,,,,
-Mikkel Thorup,diskeynote,images/speakers/MikkelThorup.jpg,University of Copenhagen,Professor,,,,,,
+Speaker,category,image_link,affiliation,title,subtitle,honor,expertise,talktitle,abstract,talk_date,talk_start_time,talk_end_time
 
-Li-Hsuan Chen,plenary,,National Chung-Cheng University,Assistant Professor,,,,,,
+Jarosław (Jarek) Byrka,keynote,images/speakers/Jarek.jpg,University of Wrocław,Professor,,"STOC 2010 Best Paper Award,
+Witold Lipski prize","Discrete Optimization, Location and Covering Problems, Network Design, LP-Rounding Approximation Algorithms, Randomized Rounding Techniques",
+Ho-Lin Chen,keynote,images/speakers/holinchen_l.jpg,National Taiwan University,Professor,,"2020 NSTC Ta-You Wu Memorial Award","Algorithm Design, Molecular Computing, Algorithmic Game Theory"
+
+Mikkel Thorup,diskeynote,images/speakers/MikkelThorup.jpg,University of Copenhagen,"Professor, Head of Center for Efficient Algorithms and Data Structures (EADS)","Fellow of ACM, Fellow of AT&T,
+Member of the Royal Danish Academy of Sciences and Letters","Co-winner of the 2011 MAA David P. Robbins Prize,
+Winner of the 2015 Villum Kann Rasmussen Award for Technical and Scientific Research,
+2021 AMS-MOS Fulkerson Prize, ACM STOC 20-year Test-of-Time Award","Algorithms and Data Structures, Efficient Graph Algorithms, Practical Hash Functions",,,
+
 Ben Tsun-Ming Cheung,plenary,images/speakers/Ben.png,National Tsing-Hua University,Assistant Professor,,,,,,
 Hsiang-Hsuan Liu,plenary,images/speakers/Elison.jpg,Utrecht University,Assistant Professor ,,,,,,
 Bob Krekelberg,plenary,images/speakers/Bob.jpg,Utrecht University,PhD Candidate  ,,,,,,

@@ -11,7 +11,7 @@
   "speakerCategories": [
     { "key": "diskeynote", "label": "Distinguished Keynote" },
     { "key": "keynote", "label": "Keynote Lectures" },
-    { "key": "plenary", "label": "Plenary Talks" }
+    { "key": "plenary", "label": "Invited Talks" }
    
   ],
   "localOrganizers": [
