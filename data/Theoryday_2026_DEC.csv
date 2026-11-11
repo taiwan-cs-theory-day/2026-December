@@ -1,15 +1,55 @@
 Speaker,category,image_link,affiliation,title,subtitle,honor,expertise,talktitle,abstract,talk_date,talk_start_time,talk_end_time
 
-Jarosław (Jarek) Byrka,keynote,images/speakers/Jarek.jpg,University of Wrocław,Professor,,"STOC 2010 Best Paper Award,
-Witold Lipski prize","Discrete Optimization, Location and Covering Problems, Network Design, LP-Rounding Approximation Algorithms, Randomized Rounding Techniques",
-Ho-Lin Chen,keynote,images/speakers/holinchen_l.jpg,National Taiwan University,Professor,,"2020 NSTC Ta-You Wu Memorial Award","Algorithm Design, Molecular Computing, Algorithmic Game Theory"
-
+##
+## Mikkel Thorup
+##
 Mikkel Thorup,diskeynote,images/speakers/MikkelThorup.jpg,University of Copenhagen,"Professor, Head of Center for Efficient Algorithms and Data Structures (EADS)","Fellow of ACM, Fellow of AT&T,
 Member of the Royal Danish Academy of Sciences and Letters","Co-winner of the 2011 MAA David P. Robbins Prize,
 Winner of the 2015 Villum Kann Rasmussen Award for Technical and Scientific Research,
-2021 AMS-MOS Fulkerson Prize, ACM STOC 20-year Test-of-Time Award","Algorithms and Data Structures, Efficient Graph Algorithms, Practical Hash Functions",,,
+2021 AMS-MOS Fulkerson Prize, ACM STOC 20-year Test-of-Time Award","Algorithms and Data Structures, Efficient Graph Algorithms, Practical Hash Functions",Compact oracles for reachability and approximate distances in planar digraphs,"It is shown that a planar digraph can be preprocessed in near-linear time, producing a near-linear space oracle that can answer reachability queries in constant time. The oracle can be distributed as an O(log n) space label for each vertex and then we can determine if one vertex can reach another considering their two labels only.The approach generalizes to give a near-linear space approximate distances oracle for a weighted planar digraph. With weights drawn from {0, …, N}, it approximates distances within a factor (1 + ε) in O(log log (nN) + 1/ε) time. Our scheme can be extended to find and route along correspondingly short dipaths.",
 
+##
+## Jarek Byrka
+##
+Jarosław (Jarek) Byrka,keynote,images/speakers/Jarek.jpg,University of Wrocław,Professor,,"STOC 2010 Best Paper Award,
+Witold Lipski prize","Discrete Optimization, Location and Covering Problems, Network Design, LP-Rounding Approximation Algorithms, Randomized Rounding Techniques",
+
+##
+## Ho-Lin Chen
+##
+Ho-Lin Chen,keynote,images/speakers/holinchen_l.jpg,National Taiwan University,Professor,,"2020 NSTC Ta-You Wu Memorial Award","Algorithm Design, Molecular Computing, Algorithmic Game Theory",Self-Stabilizing Leader Election in Population Protocols,"Population protocols provide a simple model of distributed computation in which anonymous agents with limited memory interact in pairs to perform collective tasks. Leader election is one of the fundamental problems in this model. In the self-stabilizing variant, the protocol must converge to a configuration with a unique leader from any initial configuration and maintain this property thereafter. Despite its simple formulation, self-stabilizing leader election presents significant challenges, particularly when the agents have limited memory or the network size is unknown.
+
+In this talk, I will present a series of results on self-stabilizing leader election in population protocols. We first show that a constant number of states suffices to solve the problem on rings of arbitrary sizes, and extend this approach to tori and regular graphs. Although these protocols require exponential convergence time, they demonstrate that self-stabilization is possible with extremely limited memory. We then turn to complete graphs and investigate the tradeoff between stabilization time and the number of states. In particular, we obtain an asymptotically optimal linear-time protocol with a linear number of states, as well as faster protocols that achieve sublinear and even logarithmic stabilization time at the cost of substantially larger state spaces.
+
+Finally, I will discuss several recent developments that further improve these tradeoffs, including near-time-optimal protocols with polylogarithmic and polyloglog states on rings, and new approaches that significantly reduce the state complexity of sublinear-time protocols on complete graphs."
+
+##
+## Ben Tsun-Ming Cheung
+##
 Ben Tsun-Ming Cheung,plenary,images/speakers/Ben.png,National Tsing-Hua University,Assistant Professor,,,,,,
+
+
+##
+## Hsiang-Hsuan Liu
+##
 Hsiang-Hsuan Liu,plenary,images/speakers/Elison.jpg,Utrecht University,Assistant Professor ,,,,,,
+
+
+##
+## Bob Krekelberg
+##
 Bob Krekelberg,plenary,images/speakers/Bob.jpg,Utrecht University,PhD Candidate  ,,,,,,
+
+
+##
+## Eunjin Oh
+##
 Eunjin Oh,plenary,images/speakers/Eunjin.jpg,POSTECH,Associate Professor,,,,,
+
+
+##
+## Marcus Wilhelm
+##
+Marcus Wilhelm,plenary,images/speakers/marcus_dslr.jpg,Karlsruhe Institute of Technology,Postdoc Researcher,,,"Graph Algorithms, Parameterized Complexity, Randomized Analysis, Geometry","Diameter Computation Between Theory and Practice","The diameter of a graph is defined as the maximum distance between any two vertices. Despite being a fundamental graph problem with many applications, there remains a large gap between well-understood theoretical algorithms and the approaches used for diameter computation in practice.
+
+In this talk we consider the iterative fringe upper bound (iFUB) by Crescenzi et al., and gain an intuition for its good performance on real-world networks with the exception of torus-like geometric graphs. To overcome this limitation, we develop a new algorithm with provable performance guarantees on (torus) random geometric graphs. Finally, we explore results from  engineering an efficient implementation of this algorithm and see how well it performs in practice."
