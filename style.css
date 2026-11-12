@@ -640,8 +640,8 @@ footer {
 }
 
 .speaker-category-tab {
-  min-width: 260px;
-  padding: 12px 18px;
+  min-width: 180px;
+  padding: 14px 22px;
   border: 1px solid transparent;
   border-bottom: 3px solid transparent;
   background: #fff;
