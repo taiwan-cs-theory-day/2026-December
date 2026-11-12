@@ -689,6 +689,19 @@ footer {
   overflow-x: auto;
 }
 
+.speaker-tabs.two-rows {
+  display: grid;
+  grid-template-columns: repeat(var(--speaker-tab-columns, 2), minmax(0, 1fr));
+  gap: 10px 12px;
+  overflow-x: hidden;
+  padding-bottom: 10px;
+}
+
+.speaker-tabs.two-rows .speaker-tab {
+  text-align: center;
+  white-space: normal;
+}
+
 .speaker-tab {
   padding: 14px 22px;
   border: none;
@@ -706,6 +719,20 @@ footer {
   color: #003366;
   font-weight: 700;
   background: #f8fafc;
+}
+
+@media (max-width: 900px) {
+  .speaker-tabs.two-rows {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 0;
+  }
+
+  .speaker-tabs.two-rows .speaker-tab {
+    text-align: center;
+    white-space: normal;
+  }
 }
 
 .speaker-content {

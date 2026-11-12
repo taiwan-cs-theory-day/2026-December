@@ -24,32 +24,104 @@ In this talk, I will present a series of results on self-stabilizing leader elec
 Finally, I will discuss several recent developments that further improve these tradeoffs, including near-time-optimal protocols with polylogarithmic and polyloglog states on rings, and new approaches that significantly reduce the state complexity of sublinear-time protocols on complete graphs."
 
 ##
+##
+
+##
+## Koustav Bhanja
+##
+Koustav Bhanja,plenaryAK,images/speakers/Koustav.jpg,Weizmann Institute of Science,Postdoc Researcher,,,,,,
+
+
+##
+## Li-Hsuan Chen
+##
+Li-Hsuan Chen,plenaryAK,images/speakers/LiHsuan.jpg,National Chung-Cheng University,Assistant Professor,,,,,,
+
+
+##
+## Yu-Fang Chen
+##
+Yu-Fang Chen,plenaryAK,images/speakers/Yu-Fang.jpg,Academia Sinica,Research Fellow (Professor),,,"Formal Verification, Quantum Programming, Automata Theory",,,
+
+
+##
 ## Ben Tsun-Ming Cheung
 ##
-Ben Tsun-Ming Cheung,plenary,images/speakers/Ben.png,National Tsing-Hua University,Assistant Professor,,,,,,
+Ben Tsun-Ming Cheung,plenaryAK,images/speakers/Ben.png,National Tsing-Hua University,Assistant Professor,,,,,,
 
 
 ##
-## Hsiang-Hsuan Liu
+## Chao-Kai Chiang
 ##
-Hsiang-Hsuan Liu,plenary,images/speakers/Elison.jpg,Utrecht University,Assistant Professor ,,,,,,
+Chao-Kai Chiang,plenaryAK,images/speakers/Chao-Kai.png,National Yang-Ming Chiao-Tung University,Assistant Professor,,,"Learning Methods for Imperfect Supervision, Noisy Labels, Online Learning, and Bandit Feedbacks",,,
+
+
+##
+## Colin Cleveland
+##
+Colin Cleveland,plenaryAK,images/speakers/colin.webp,"King's College",PhD Candidate,,,"Algorithmic Game Theory, Computational Social Choice, Voting Theory",,,
+
+
+##
+## Shuichi Hirahara
+##
+Shuichi Hirahara,plenaryAK,images/speakers/Hirahara.webp,National Institute of Informatics,Associate Professor,,,"Complexity Theory, Circuit Complexity, Kolmogorov Complexity, Average-case Complexity",,,
 
 
 ##
 ## Bob Krekelberg
 ##
-Bob Krekelberg,plenary,images/speakers/Bob.jpg,Utrecht University,PhD Candidate  ,,,,,,
+B.H.A.F. Bob Krekelberg,plenaryAK,images/speakers/Bob.jpg,Utrecht University,PhD Candidate,,,"Algorithm Design, Online Algorithms",,,
+
+
+##
+## Hsiang-Hsuan Liu
+##
+Hsiang-Hsuan Liu,plenaryLZ,images/speakers/Elison.jpg,Utrecht University,Assistant Professor,,,"Combinatorial Optimization, Online Algorithms, Approximation Algorithms",,,
 
 
 ##
 ## Eunjin Oh
 ##
-Eunjin Oh,plenary,images/speakers/Eunjin.jpg,POSTECH,Associate Professor,,,,,
+Eunjin Oh,plenaryLZ,images/speakers/Eunjin.jpg,POSTECH,Associate Professor,,,"Algorithms and Data Structures, Computational Geometry",,
+
+
+##
+## Felix Ohnesorge
+##
+Felix Ohnesorge,plenaryLZ,,Kiel University,Postdoc Researcher,,,"",,
+
+
+##
+## Peter Rossmanith
+##
+Peter Rossmanith,plenaryLZ,images/speakers/peter.jpg,RWTH Aachen University,Professor,,,"","When Exact Algorithms Are Elusive: What Should We Relax?","When an exact algorithm is too expensive, the usual response is to seek a polynomial-time approximation algorithm. But a different relaxation may give a more useful guarantee. I will give several examples of how problems can be relaxed, then examine three ways to relax the problem of covering a graph with k shortest paths. 
+
+We can keep k shortest paths and cover almost all vertices; cover every vertex while allowing up to 2k shortest paths; or keep k paths and full coverage while allowing each subpath to be at most 1 + ε times as long as a shortest path. Each version admits a fixed-parameter algorithm that succeeds whenever an exact k-path cover exists. These results show how the choice of what to relax can matter as much as the algorithm itself."
+
+
+##
+## Chen-Yu Wei
+##
+Chen-Yu Wei,plenaryLZ,images/speakers/chen-yu.png,University of Virginia,Assistant Professor,,,"Interactive Machine Learning",
 
 
 ##
 ## Marcus Wilhelm
 ##
-Marcus Wilhelm,plenary,images/speakers/marcus_dslr.jpg,Karlsruhe Institute of Technology,Postdoc Researcher,,,"Graph Algorithms, Parameterized Complexity, Randomized Analysis, Geometry","Diameter Computation Between Theory and Practice","The diameter of a graph is defined as the maximum distance between any two vertices. Despite being a fundamental graph problem with many applications, there remains a large gap between well-understood theoretical algorithms and the approaches used for diameter computation in practice.
+Marcus Wilhelm,plenaryLZ,images/speakers/marcus_dslr.jpg,Karlsruhe Institute of Technology,Postdoc Researcher,,,"Graph Algorithms, Parameterized Complexity, Randomized Analysis, Geometry","Diameter Computation Between Theory and Practice","The diameter of a graph is defined as the maximum distance between any two vertices. Despite being a fundamental graph problem with many applications, there remains a large gap between well-understood theoretical algorithms and the approaches used for diameter computation in practice.
 
 In this talk we consider the iterative fringe upper bound (iFUB) by Crescenzi et al., and gain an intuition for its good performance on real-world networks with the exception of torus-like geometric graphs. To overcome this limitation, we develop a new algorithm with provable performance guarantees on (torus) random geometric graphs. Finally, we explore results from  engineering an efficient implementation of this algorithm and see how well it performs in practice."
+
+
+##
+## Yi-Shan Wu
+##
+Yi-Shan Wu,plenaryLZ,images/speakers/Yi-Shan.jpg,Academia Sinica,Postdoc Researcher,,,"Machine Learning, Reinforcement Learning, Statistical Learning Theory",,
+
+
+##
+## Julian Zimmert
+##
+Julian Zimmert,plenaryLZ,images/speakers/Julian_Zimmert.png,Google Research,Senior Research Scientist,,,"Online Learning, Reinforcement Learning",,
+

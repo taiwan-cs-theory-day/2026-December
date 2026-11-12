@@ -49,6 +49,14 @@ async function initSpeakers() {
     });
     speakerTabs.replaceChildren();
     const records = speakersFor(category.key);
+    const useTwoRows = category.key === 'plenaryAK' || category.key === 'plenaryLZ';
+    speakerTabs.classList.toggle('two-rows', useTwoRows);
+    if (useTwoRows) {
+      const columns = Math.max(1, Math.ceil(records.length / 2));
+      speakerTabs.style.setProperty('--speaker-tab-columns', String(columns));
+    } else {
+      speakerTabs.style.removeProperty('--speaker-tab-columns');
+    }
     records.forEach(speaker => {
       const button = document.createElement('button');
       button.className = 'speaker-tab';
