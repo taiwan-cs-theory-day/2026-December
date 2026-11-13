@@ -8,11 +8,15 @@ Member of the Royal Danish Academy of Sciences and Letters","Co-winner of the 20
 Winner of the 2015 Villum Kann Rasmussen Award for Technical and Scientific Research,
 2021 AMS-MOS Fulkerson Prize, ACM STOC 20-year Test-of-Time Award","Algorithms and Data Structures, Efficient Graph Algorithms, Practical Hash Functions",Compact oracles for reachability and approximate distances in planar digraphs,"It is shown that a planar digraph can be preprocessed in near-linear time, producing a near-linear space oracle that can answer reachability queries in constant time. The oracle can be distributed as an O(log n) space label for each vertex and then we can determine if one vertex can reach another considering their two labels only.The approach generalizes to give a near-linear space approximate distances oracle for a weighted planar digraph. With weights drawn from {0, …, N}, it approximates distances within a factor (1 + ε) in O(log log (nN) + 1/ε) time. Our scheme can be extended to find and route along correspondingly short dipaths.",
 
+
 ##
 ## Jarek Byrka
 ##
 Jarosław (Jarek) Byrka,keynote,images/speakers/Jarek.jpg,University of Wrocław,Professor,,"STOC 2010 Best Paper Award,
-Witold Lipski prize","Discrete Optimization, Location and Covering Problems, Network Design, LP-Rounding Approximation Algorithms, Randomized Rounding Techniques",
+Witold Lipski prize","Discrete Optimization, Location and Covering Problems, Network Design, LP-Rounding Approximation Algorithms, Randomized Rounding Techniques","k-Clustering via Iterative Randomized Rounding","We propose a single rounding algorithm for the fractional solutions of the standard LP relaxation for k-clustering. As a starting point, we obtain an iterative rounding (3p+1)/2-Lagrangian Multiplier-Perserving (LMP) approximation for the k-clustering problem with the cost function being the p-th power of the distance. Such an algorithm outputs a random solution that opens k facilities \emph{in expectation}, whose cost in expectation is at most 3p+12 times the optimum cost. Thus, we recover the 2-LMP approximation for k-median by Jain et al.~[JACM'03], which played a central role in deriving the current best 2 approximation for k-median.
+
+Then, we show how to convert the LMP-approximation algorithms to a true-approximation, with only a (1+ε) factor loss in the approximation ratio. We obtain a (3p+1)/2+ε-approximation algorithm for k-clustering with cost function being the p-th power of the distance, for p≥1. Further we also show how to obtain improved approximation in the Euclidean metric setting, where we get 1.71955-approximation for k-median and 11/3+ε-approximation for k-means."
+
 
 ##
 ## Ho-Lin Chen
@@ -53,7 +57,10 @@ Ben Tsun-Ming Cheung,plenaryAK,images/speakers/Ben.png,National Tsing-Hua Univer
 ##
 ## Chao-Kai Chiang
 ##
-Chao-Kai Chiang,plenaryAK,images/speakers/Chao-Kai.png,National Yang-Ming Chiao-Tung University,Assistant Professor,,,"Learning Methods for Imperfect Supervision, Noisy Labels, Online Learning, and Bandit Feedbacks",,,
+Chao-Kai Chiang,plenaryAK,images/speakers/Chao-Kai.png,National Yang-Ming Chiao-Tung University,Assistant Professor,,,"Learning Methods for Imperfect Supervision, Noisy Labels, Online Learning, and Bandit Feedbacks","Weakly Supervised Learning: A Contamination Perspective","Among the flourishing research of weakly supervised learning (WSL), we recognize the lack of a unified interpretation of the mechanism behind the weakly supervised scenarios, let alone a systematic treatment of the risk rewrite problem, a crucial step in the empirical risk minimization approach. In this talk, we introduce a framework providing a comprehensive understanding and a unified methodology for WSL. The formulation component of the framework, leveraging a contamination perspective, provides a unified interpretation of how weak supervision is formed and subsumes fifteen existing WSL settings. The induced reduction graphs offer comprehensive connections over WSLs. The analysis component of the framework, viewed as a decontamination process, provides a systematic method of conducting risk rewrite. In addition to the conventional inverse matrix approach, we devise a novel strategy called marginal chain aiming to decontaminate distributions. We justify the feasibility of the proposed framework by recovering existing rewrites reported in the literature. https://openreview.net/forum?id=RGsdAwWuu6
+
+About the Speaker:
+Dr. Chao-Kai Chiang is an Assistant Professor in the Department of Computer Science at National Yang Ming Chiao Tung University (NYCU), where he leads the Resilient Intelligence Lab (RIL). His research interests include weakly supervised learning, learning with label noise, learning under distribution shift, and multi-armed bandits. His research aims to develop practical and theoretically grounded machine learning methods for reliable learning from imperfect data in changing environments.",
 
 
 ##
@@ -123,5 +130,9 @@ Yi-Shan Wu,plenaryLZ,images/speakers/Yi-Shan.jpg,Academia Sinica,Postdoc Researc
 ##
 ## Julian Zimmert
 ##
-Julian Zimmert,plenaryLZ,images/speakers/Julian_Zimmert.png,Google Research,Senior Research Scientist,,,"Online Learning, Reinforcement Learning",,
+Julian Zimmert,plenaryLZ,images/speakers/Julian_Zimmert.png,Google Research,Senior Research Scientist,,,"Online Learning, Reinforcement Learning","Change of Measure in Online Linear Optimization","Online Linear Optimization (OLO) is a fundamental problem solved with canonical algorithms such as Follow the Regularized Leader (FTRL) or Online Mirror Descent (OMD). 
+
+Many sequential decision problems are solved by reducing them to OLO. While this strategy has proven extremely successful, regret components external to OLO sometimes lead to suboptimal overall regret. In a surprising number of distinct problems, a change-of-measure would immediately resolve the issue. 
+
+This talk presents the linear change-of-measure technique for FTRL and OMD. Although this technique isn't new, it is surprisingly little known and people continue to derive complicated solutions to problems that change-of-measure trivially resolves. "
 
