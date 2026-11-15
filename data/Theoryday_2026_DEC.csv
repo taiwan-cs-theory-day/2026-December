@@ -33,7 +33,20 @@ Finally, I will discuss several recent developments that further improve these t
 ##
 ## Koustav Bhanja
 ##
-Koustav Bhanja,plenaryAK,images/speakers/Koustav.jpg,Weizmann Institute of Science,Postdoc Researcher,,,,,,
+Koustav Bhanja,plenaryAK,images/speakers/Koustav.jpg,Weizmann Institute of Science,Postdoc Researcher,,,,"Beyond Gomory–Hu: Maximum Information about All-Pairs Minimum Cuts in $O(n)$ Space","For an undirected weighted graph $G=(V,E)$ on $n$ vertices, an $(x,y)$-mincut $C\subset V$ is the least value cut satisfying $C\cap {x,y}=\{x\}$. The classical Gomory–Hu tree is one of the most elegant structures in graph algorithms. It encodes an $(x,y)$-mincut for every pair of vertices $x,y$, using only $O(n)$ space. However, it stores only one ‘arbitrary’ mincut per vertex pair, even though there can be exponentially many. This raises a fundamental question: How much information about the families of all-pairs mincuts can be encoded while retaining Gomory–Hu compactness? 
+
+In this talk, I will discuss two recent results of ours that settle this question in a strong sense:
+All-pairs Nearest Mincuts. The nearest $(s,t)$-mincut is the unique inclusion-wise minimal one among all $(s,t)$-mincuts containing $s$. We introduce the nearest mincut hierarchy, an $O(n)$-space structure that encodes the nearest mincut for every pair of vertices. Moreover, given any $(u,v)$ pair, it reports the nearest $(u,v)$-mincut in $O(n)$ time.
+
+All-pairs X All-pairs Mincuts. We further extend the nearest mincut hierarchy to encode the maximum possible information about the entire family of $(x,y)$-mincuts, simultaneously for all vertex pairs $x,y$, while retaining $O(n)$ space.
+
+We present an $O(n)$ space structure that, given any four vertices $x,y,u,v$, reports an $(x,y)$-mincut separating $u$ and $v$, whenever one exists, in $O(n)$ time. Thus, information about $\Theta(n^4)$ choices is represented using just $O(n)$ space. Also, requiring the mincut to place $u$ on the side of $x$ and $v$ on the side of $y$ needs $\Omega(n^2)$ space, even for a fixed pair $x,y$.
+
+The technical part of this talk will focus on the first result on all-pairs nearest mincuts. I will discuss the main technical ideas behind the nearest mincut hierarchy. The emphasis will be on how it encodes all-pairs nearest mincuts in $O(n)$ space rather than how to recover them efficiently. In particular, I will illustrate how the classical connectivity carcass of Dinitz and Vainshtein [STOC ‘94], originally designed for Steiner mincuts, can be interestingly used here beyond the Steiner mincuts scope.
+
+I will also discuss the immediate applications of both results to all-pairs mincuts sensitivity oracles. They together yield $O(n)$ space oracles that determine how the mincuts between vertex pairs change upon the insertion or failure of any edge. The first result handles only edge insertions, while the second can handle edge failures also. Together, they resolve an open question of Baswana and Pandey (SODA ‘22): whether all-pairs mincuts sensitivity oracles exist that occupy subquadratic space and achieve $o(m)$ query time simultaneously.
+
+Coauthors: The first result is joint work with Yotam Kenneth-Mordoch and Asaf Petruschka, appearing in SODA ’27. The second result is joint work with Merav Parter and Asaf Petruschka, submitted to STOC ’27.",
 
 
 ##
@@ -51,7 +64,13 @@ Yu-Fang Chen,plenaryAK,images/speakers/Yu-Fang.jpg,Academia Sinica,Research Fell
 ##
 ## Ben Tsun-Ming Cheung
 ##
-Ben Tsun-Ming Cheung,plenaryAK,images/speakers/Ben.png,National Tsing-Hua University,Assistant Professor,,,,,,
+Ben Tsun-Ming Cheung,plenaryAK,images/speakers/Ben.png,National Tsing-Hua University,Assistant Professor,,,,"Space-efficient Streaming Algorithms for Two-Dimensional Congruence Testing","Geometric congruence asks whether two point multisets are identical up to translation and rotation. This problem is a fundamental building block for many computer vision applications, and its time complexity has been extensively studied in the RAM model.
+
+To investigate the space efficiency aspect of this problem, we study geometric congruence in the streaming model with finite-precision rational inputs. In contrast to the conventional algorithmic setting, the input coordinates are rational numbers of bounded bit length presented in a stream with limited access, and the goal is to solve the problem using as little memory as possible.
+
+We discuss several space-efficient randomized algorithms for 2D congruence testing, including a one-pass sublinear-space algorithm, and some two-pass polylogarithmic-space algorithms. To achieve the space efficiency, we employ several number-theoretic approaches to compress the relevant high-precision information into moderate-precision statistics.
+
+On the hardness side, we use communication complexity methods to establish a matching space lower bound. Moreover, for another natural variant, approximate congruence testing, we show that no low-pass streaming algorithm can solve the problem without using linear space. This establishes a gap between exact and approximate congruence testing in the streaming model and illustrates that the exact-input constraint is a necessary restriction.",
 
 
 ##
@@ -78,7 +97,9 @@ Shuichi Hirahara,plenaryAK,images/speakers/Hirahara.webp,National Institute of I
 ##
 ## Bob Krekelberg
 ##
-B.H.A.F. Bob Krekelberg,plenaryAK,images/speakers/Bob.jpg,Utrecht University,PhD Candidate,,,"Algorithm Design, Online Algorithms",,,
+B.H.A.F. Bob Krekelberg,plenaryAK,images/speakers/Bob.jpg,Utrecht University,PhD Candidate,,,"Algorithm Design, Online Algorithms","On the FirstFit Algorithm for Online Unit-Interval Coloring","Graph coloring is a classical problem in combinatorial optimization, with a rich history of both algorithmic and structural results. In the online setting, vertices arrive one by one and must be assigned colors irrevocably, without knowledge of future arrivals. One of the most natural algorithms for this problem is FirstFit, which assigns each arriving vertex the smallest available color. Despite its simplicity, understanding the precise performance of FirstFit remains challenging, even on highly structured graph classes such as interval graphs.
+
+In this talk, I will discuss recent progress towards understanding the performance of FirstFit on unit interval graphs, where intervals have equal length and may be open or closed. I will introduce a new counting technique that generalizes the classical neighborhood bound. The key idea is to identify critical intervals that lead to sharper bounds on the number of colors used by FirstFit. Using this technique, we show that FirstFit uses at most 2ω colors when all endpoints are integral, and at most ⌈(7/3)ω⌉ − 2 in the general case, where ω denotes the optimal number of colors.",
 
 
 ##
@@ -96,7 +117,22 @@ Eunjin Oh,plenaryLZ,images/speakers/Eunjin.jpg,POSTECH,Associate Professor,,,"Al
 ##
 ## Felix Ohnesorge
 ##
-Felix Ohnesorge,plenaryLZ,,Kiel University,Postdoc Researcher,,,"",,
+Felix Ohnesorge,plenaryLZ,,Kiel University,Postdoc Researcher,,,"","A Constructive FPT Algorithm for Integer Cone Optimization with Convex Costs","We give a deterministic fixed-parameter algorithm for integer cone optimization with convex costs. 
+
+Given $\tau$ rational polytopes in $\mathbb{R}^{d+k}$, we combine generators whose first $d$ coordinates are integral and whose remaining $k$ coordinates may be fractional.
+Each generator has a convex cost depending only on its integer coordinates.
+We minimize the total cost of nonnegative integer combinations subject to arbitrary rational linear constraints on the full typewise aggregates and generator counts.
+Our algorithm runs in time
+\[
+    2^{\tau\log(\tau+1)\,2^{O(d)}}\cdot |I|^{O(1)},
+\]
+where $|I|$ is the total binary input length. It constructs an optimal representation using at most $2^{2d+1}$ distinct generators per type.
+The number $k$ of continuous coordinates contributes only to the polynomial input factor.
+
+For a single generator type, the running time becomes $2^{2^{O(d)}}\cdot |I|^{O(1)}$.
+Applications include constructive FPT algorithms for Cone and Polytope Intersection, high-multiplicity bin packing, vector bin packing, and makespan minimization on uniform and unrelated machines.
+The double-exponential dependence on $d$ is tight for Point-in-Cone and both bin-packing problems assuming $\mathrm{NP}\nsubseteq\mathrm{SUBEXP}$.
+The mixed-integer formulation also yields additive EPTASs for makespan minimization, machine covering, and envy minimization on identical machines, and additive schemes fixed-parameter tractable in $1/\varepsilon+\tau$ on uniform machines."
 
 
 ##
