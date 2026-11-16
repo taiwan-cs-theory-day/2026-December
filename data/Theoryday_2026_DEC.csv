@@ -1,23 +1,174 @@
 Speaker,category,image_link,affiliation,title,subtitle,honor,expertise,talktitle,abstract,talk_date,talk_start_time,talk_end_time
 
-Jarosław (Jarek) Byrka,keynote,images/speakers/Jarek.jpg,University of Wrocław,Professor,,"STOC 2010 Best Paper Award,
-Witold Lipski prize","Discrete Optimization, Location and Covering Problems, Network Design, LP-Rounding Approximation Algorithms, Randomized Rounding Techniques",
-Ho-Lin Chen,keynote,images/speakers/holinchen_l.jpg,National Taiwan University,Professor,,"2020 NSTC Ta-You Wu Memorial Award","Algorithm Design, Molecular Computing, Algorithmic Game Theory"
-
+##
+## Mikkel Thorup
+##
 Mikkel Thorup,diskeynote,images/speakers/MikkelThorup.jpg,University of Copenhagen,"Professor, Head of Center for Efficient Algorithms and Data Structures (EADS)","Fellow of ACM, Fellow of AT&T,
 Member of the Royal Danish Academy of Sciences and Letters","Co-winner of the 2011 MAA David P. Robbins Prize,
 Winner of the 2015 Villum Kann Rasmussen Award for Technical and Scientific Research,
-2021 AMS-MOS Fulkerson Prize, ACM STOC 20-year Test-of-Time Award","Algorithms and Data Structures, Efficient Graph Algorithms, Practical Hash Functions",,,
+2021 AMS-MOS Fulkerson Prize, ACM STOC 20-year Test-of-Time Award","Algorithms and Data Structures, Efficient Graph Algorithms, Practical Hash Functions",Compact oracles for reachability and approximate distances in planar digraphs,"It is shown that a planar digraph can be preprocessed in near-linear time, producing a near-linear space oracle that can answer reachability queries in constant time. The oracle can be distributed as an O(log n) space label for each vertex and then we can determine if one vertex can reach another considering their two labels only.The approach generalizes to give a near-linear space approximate distances oracle for a weighted planar digraph. With weights drawn from {0, …, N}, it approximates distances within a factor (1 + ε) in O(log log (nN) + 1/ε) time. Our scheme can be extended to find and route along correspondingly short dipaths.",
 
-Ben Tsun-Ming Cheung,plenary,images/speakers/Ben.png,National Tsing-Hua University,Assistant Professor,,,,,,
-Hsiang-Hsuan Liu,plenary,images/speakers/Elison.jpg,Utrecht University,Assistant Professor ,,,,,,
-Bob Krekelberg,plenary,images/speakers/Bob.jpg,Utrecht University,PhD Candidate  ,,,,,,
-Eunjin Oh,plenary,images/speakers/Eunjin.jpg,POSTECH,Associate Professor,,,,,
-Li-Hsuan Chen, plenary,images/speakers/Li-Shuan.jpg,National Chung Cheng University,Assistant Professor,,,,,,
-Chao-Kai Chiang,plenary,images/speakers/Chiao.png,National Yang-Ming Chiao-Tung University,Assistant Professor,,,,,,
-Colin Cleveland,plenary,images/speakers/Colin.jpg,King’s College,PhD Candidate,,,,,,
-Yi-Shan Wu,plenary,images/speakers/Yi-Shan.png, Academia Sinica,Postdoctoral Scholar,,,,,,
-Julian Zimmert,plenary,images/speakers/julian.png,Google Research, Researcher,,,,,,
-Felix Ohnesorge,plenary,, Kiel University,PhD Student ,,,,,,
-Peter Rossmanith,plenary,images/speakers/peters.jpeg, RWTH Aachen University, Professor,,,,,,
-Marcus Wilhelm,plenary,images/speakers/marcus_dslr.jpg, Karlsruhe Institute of Technology,Postdoctoral Researcher,,,,,,
+
+##
+## Jarek Byrka
+##
+Jarosław (Jarek) Byrka,keynote,images/speakers/Jarek.jpg,University of Wrocław,Professor,,"STOC 2010 Best Paper Award,
+Witold Lipski prize","Discrete Optimization, Location and Covering Problems, Network Design, LP-Rounding Approximation Algorithms, Randomized Rounding Techniques","k-Clustering via Iterative Randomized Rounding","We propose a single rounding algorithm for the fractional solutions of the standard LP relaxation for k-clustering. As a starting point, we obtain an iterative rounding (3p+1)/2-Lagrangian Multiplier-Perserving (LMP) approximation for the k-clustering problem with the cost function being the p-th power of the distance. Such an algorithm outputs a random solution that opens k facilities \emph{in expectation}, whose cost in expectation is at most 3p+12 times the optimum cost. Thus, we recover the 2-LMP approximation for k-median by Jain et al.~[JACM'03], which played a central role in deriving the current best 2 approximation for k-median.
+
+Then, we show how to convert the LMP-approximation algorithms to a true-approximation, with only a (1+ε) factor loss in the approximation ratio. We obtain a (3p+1)/2+ε-approximation algorithm for k-clustering with cost function being the p-th power of the distance, for p≥1. Further we also show how to obtain improved approximation in the Euclidean metric setting, where we get 1.71955-approximation for k-median and 11/3+ε-approximation for k-means."
+
+
+##
+## Ho-Lin Chen
+##
+Ho-Lin Chen,keynote,images/speakers/holinchen_l.jpg,National Taiwan University,Professor,,"2020 NSTC Ta-You Wu Memorial Award","Algorithm Design, Molecular Computing, Algorithmic Game Theory",Self-Stabilizing Leader Election in Population Protocols,"Population protocols provide a simple model of distributed computation in which anonymous agents with limited memory interact in pairs to perform collective tasks. Leader election is one of the fundamental problems in this model. In the self-stabilizing variant, the protocol must converge to a configuration with a unique leader from any initial configuration and maintain this property thereafter. Despite its simple formulation, self-stabilizing leader election presents significant challenges, particularly when the agents have limited memory or the network size is unknown.
+
+In this talk, I will present a series of results on self-stabilizing leader election in population protocols. We first show that a constant number of states suffices to solve the problem on rings of arbitrary sizes, and extend this approach to tori and regular graphs. Although these protocols require exponential convergence time, they demonstrate that self-stabilization is possible with extremely limited memory. We then turn to complete graphs and investigate the tradeoff between stabilization time and the number of states. In particular, we obtain an asymptotically optimal linear-time protocol with a linear number of states, as well as faster protocols that achieve sublinear and even logarithmic stabilization time at the cost of substantially larger state spaces.
+
+Finally, I will discuss several recent developments that further improve these tradeoffs, including near-time-optimal protocols with polylogarithmic and polyloglog states on rings, and new approaches that significantly reduce the state complexity of sublinear-time protocols on complete graphs."
+
+##
+##
+
+##
+## Koustav Bhanja
+##
+Koustav Bhanja,plenaryAK,images/speakers/Koustav.jpg,Weizmann Institute of Science,Postdoc Researcher,,,,"Beyond Gomory–Hu: Maximum Information about All-Pairs Minimum Cuts in $O(n)$ Space","For an undirected weighted graph $G=(V,E)$ on $n$ vertices, an $(x,y)$-mincut $C\subset V$ is the least value cut satisfying $C\cap {x,y}=\{x\}$. The classical Gomory–Hu tree is one of the most elegant structures in graph algorithms. It encodes an $(x,y)$-mincut for every pair of vertices $x,y$, using only $O(n)$ space. However, it stores only one ‘arbitrary’ mincut per vertex pair, even though there can be exponentially many. This raises a fundamental question: How much information about the families of all-pairs mincuts can be encoded while retaining Gomory–Hu compactness? 
+
+In this talk, I will discuss two recent results of ours that settle this question in a strong sense:
+All-pairs Nearest Mincuts. The nearest $(s,t)$-mincut is the unique inclusion-wise minimal one among all $(s,t)$-mincuts containing $s$. We introduce the nearest mincut hierarchy, an $O(n)$-space structure that encodes the nearest mincut for every pair of vertices. Moreover, given any $(u,v)$ pair, it reports the nearest $(u,v)$-mincut in $O(n)$ time.
+
+All-pairs X All-pairs Mincuts. We further extend the nearest mincut hierarchy to encode the maximum possible information about the entire family of $(x,y)$-mincuts, simultaneously for all vertex pairs $x,y$, while retaining $O(n)$ space.
+
+We present an $O(n)$ space structure that, given any four vertices $x,y,u,v$, reports an $(x,y)$-mincut separating $u$ and $v$, whenever one exists, in $O(n)$ time. Thus, information about $\Theta(n^4)$ choices is represented using just $O(n)$ space. Also, requiring the mincut to place $u$ on the side of $x$ and $v$ on the side of $y$ needs $\Omega(n^2)$ space, even for a fixed pair $x,y$.
+
+The technical part of this talk will focus on the first result on all-pairs nearest mincuts. I will discuss the main technical ideas behind the nearest mincut hierarchy. The emphasis will be on how it encodes all-pairs nearest mincuts in $O(n)$ space rather than how to recover them efficiently. In particular, I will illustrate how the classical connectivity carcass of Dinitz and Vainshtein [STOC ‘94], originally designed for Steiner mincuts, can be interestingly used here beyond the Steiner mincuts scope.
+
+I will also discuss the immediate applications of both results to all-pairs mincuts sensitivity oracles. They together yield $O(n)$ space oracles that determine how the mincuts between vertex pairs change upon the insertion or failure of any edge. The first result handles only edge insertions, while the second can handle edge failures also. Together, they resolve an open question of Baswana and Pandey (SODA ‘22): whether all-pairs mincuts sensitivity oracles exist that occupy subquadratic space and achieve $o(m)$ query time simultaneously.
+
+Coauthors: The first result is joint work with Yotam Kenneth-Mordoch and Asaf Petruschka, appearing in SODA ’27. The second result is joint work with Merav Parter and Asaf Petruschka, submitted to STOC ’27.",
+
+
+##
+## Li-Hsuan Chen
+##
+Li-Hsuan Chen,plenaryAK,images/speakers/LiHsuan.jpg,National Chung-Cheng University,Assistant Professor,,,,,,
+
+
+##
+## Yu-Fang Chen
+##
+Yu-Fang Chen,plenaryAK,images/speakers/Yu-Fang.jpg,Academia Sinica,Research Fellow (Professor),,,"Formal Verification, Quantum Programming, Automata Theory",,,
+
+
+##
+## Ben Tsun-Ming Cheung
+##
+Ben Tsun-Ming Cheung,plenaryAK,images/speakers/Ben.png,National Tsing-Hua University,Assistant Professor,,,,"Space-efficient Streaming Algorithms for Two-Dimensional Congruence Testing","Geometric congruence asks whether two point multisets are identical up to translation and rotation. This problem is a fundamental building block for many computer vision applications, and its time complexity has been extensively studied in the RAM model.
+
+To investigate the space efficiency aspect of this problem, we study geometric congruence in the streaming model with finite-precision rational inputs. In contrast to the conventional algorithmic setting, the input coordinates are rational numbers of bounded bit length presented in a stream with limited access, and the goal is to solve the problem using as little memory as possible.
+
+We discuss several space-efficient randomized algorithms for 2D congruence testing, including a one-pass sublinear-space algorithm, and some two-pass polylogarithmic-space algorithms. To achieve the space efficiency, we employ several number-theoretic approaches to compress the relevant high-precision information into moderate-precision statistics.
+
+On the hardness side, we use communication complexity methods to establish a matching space lower bound. Moreover, for another natural variant, approximate congruence testing, we show that no low-pass streaming algorithm can solve the problem without using linear space. This establishes a gap between exact and approximate congruence testing in the streaming model and illustrates that the exact-input constraint is a necessary restriction.",
+
+
+##
+## Chao-Kai Chiang
+##
+Chao-Kai Chiang,plenaryAK,images/speakers/Chao-Kai.png,National Yang-Ming Chiao-Tung University,Assistant Professor,,,"Learning Methods for Imperfect Supervision, Noisy Labels, Online Learning, and Bandit Feedbacks","Weakly Supervised Learning: A Contamination Perspective","Among the flourishing research of weakly supervised learning (WSL), we recognize the lack of a unified interpretation of the mechanism behind the weakly supervised scenarios, let alone a systematic treatment of the risk rewrite problem, a crucial step in the empirical risk minimization approach. In this talk, we introduce a framework providing a comprehensive understanding and a unified methodology for WSL. The formulation component of the framework, leveraging a contamination perspective, provides a unified interpretation of how weak supervision is formed and subsumes fifteen existing WSL settings. The induced reduction graphs offer comprehensive connections over WSLs. The analysis component of the framework, viewed as a decontamination process, provides a systematic method of conducting risk rewrite. In addition to the conventional inverse matrix approach, we devise a novel strategy called marginal chain aiming to decontaminate distributions. We justify the feasibility of the proposed framework by recovering existing rewrites reported in the literature. https://openreview.net/forum?id=RGsdAwWuu6
+
+About the Speaker:
+Dr. Chao-Kai Chiang is an Assistant Professor in the Department of Computer Science at National Yang Ming Chiao Tung University (NYCU), where he leads the Resilient Intelligence Lab (RIL). His research interests include weakly supervised learning, learning with label noise, learning under distribution shift, and multi-armed bandits. His research aims to develop practical and theoretically grounded machine learning methods for reliable learning from imperfect data in changing environments.",
+
+
+##
+## Colin Cleveland
+##
+Colin Cleveland,plenaryAK,images/speakers/colin.webp,"King's College",PhD Candidate,,,"Algorithmic Game Theory, Computational Social Choice, Voting Theory",,,
+
+
+##
+## Shuichi Hirahara
+##
+Shuichi Hirahara,plenaryAK,images/speakers/Hirahara.webp,National Institute of Informatics,Associate Professor,,,"Complexity Theory, Circuit Complexity, Kolmogorov Complexity, Average-case Complexity",,,
+
+
+##
+## Bob Krekelberg
+##
+B.H.A.F. Bob Krekelberg,plenaryAK,images/speakers/Bob.jpg,Utrecht University,PhD Candidate,,,"Algorithm Design, Online Algorithms","On the FirstFit Algorithm for Online Unit-Interval Coloring","Graph coloring is a classical problem in combinatorial optimization, with a rich history of both algorithmic and structural results. In the online setting, vertices arrive one by one and must be assigned colors irrevocably, without knowledge of future arrivals. One of the most natural algorithms for this problem is FirstFit, which assigns each arriving vertex the smallest available color. Despite its simplicity, understanding the precise performance of FirstFit remains challenging, even on highly structured graph classes such as interval graphs.
+
+In this talk, I will discuss recent progress towards understanding the performance of FirstFit on unit interval graphs, where intervals have equal length and may be open or closed. I will introduce a new counting technique that generalizes the classical neighborhood bound. The key idea is to identify critical intervals that lead to sharper bounds on the number of colors used by FirstFit. Using this technique, we show that FirstFit uses at most 2ω colors when all endpoints are integral, and at most ⌈(7/3)ω⌉ − 2 in the general case, where ω denotes the optimal number of colors.",
+
+
+##
+## Hsiang-Hsuan Liu
+##
+Hsiang-Hsuan Liu,plenaryLZ,images/speakers/Elison.jpg,Utrecht University,Assistant Professor,,,"Combinatorial Optimization, Online Algorithms, Approximation Algorithms",,,
+
+
+##
+## Eunjin Oh
+##
+Eunjin Oh,plenaryLZ,images/speakers/Eunjin.jpg,POSTECH,Associate Professor,,,"Algorithms and Data Structures, Computational Geometry",,
+
+
+##
+## Felix Ohnesorge
+##
+Felix Ohnesorge,plenaryLZ,,Kiel University,Postdoc Researcher,,,"","A Constructive FPT Algorithm for Integer Cone Optimization with Convex Costs","We give a deterministic fixed-parameter algorithm for integer cone optimization with convex costs. 
+
+Given $\tau$ rational polytopes in $\mathbb{R}^{d+k}$, we combine generators whose first $d$ coordinates are integral and whose remaining $k$ coordinates may be fractional.
+Each generator has a convex cost depending only on its integer coordinates.
+We minimize the total cost of nonnegative integer combinations subject to arbitrary rational linear constraints on the full typewise aggregates and generator counts.
+Our algorithm runs in time
+\[
+    2^{\tau\log(\tau+1)\,2^{O(d)}}\cdot |I|^{O(1)},
+\]
+where $|I|$ is the total binary input length. It constructs an optimal representation using at most $2^{2d+1}$ distinct generators per type.
+The number $k$ of continuous coordinates contributes only to the polynomial input factor.
+
+For a single generator type, the running time becomes $2^{2^{O(d)}}\cdot |I|^{O(1)}$.
+Applications include constructive FPT algorithms for Cone and Polytope Intersection, high-multiplicity bin packing, vector bin packing, and makespan minimization on uniform and unrelated machines.
+The double-exponential dependence on $d$ is tight for Point-in-Cone and both bin-packing problems assuming $\mathrm{NP}\nsubseteq\mathrm{SUBEXP}$.
+The mixed-integer formulation also yields additive EPTASs for makespan minimization, machine covering, and envy minimization on identical machines, and additive schemes fixed-parameter tractable in $1/\varepsilon+\tau$ on uniform machines."
+
+
+##
+## Peter Rossmanith
+##
+Peter Rossmanith,plenaryLZ,images/speakers/peter.jpg,RWTH Aachen University,Professor,,,"","When Exact Algorithms Are Elusive: What Should We Relax?","When an exact algorithm is too expensive, the usual response is to seek a polynomial-time approximation algorithm. But a different relaxation may give a more useful guarantee. I will give several examples of how problems can be relaxed, then examine three ways to relax the problem of covering a graph with k shortest paths. 
+
+We can keep k shortest paths and cover almost all vertices; cover every vertex while allowing up to 2k shortest paths; or keep k paths and full coverage while allowing each subpath to be at most 1 + ε times as long as a shortest path. Each version admits a fixed-parameter algorithm that succeeds whenever an exact k-path cover exists. These results show how the choice of what to relax can matter as much as the algorithm itself."
+
+
+##
+## Chen-Yu Wei
+##
+Chen-Yu Wei,plenaryLZ,images/speakers/chen-yu.png,University of Virginia,Assistant Professor,,,"Interactive Machine Learning",
+
+
+##
+## Marcus Wilhelm
+##
+Marcus Wilhelm,plenaryLZ,images/speakers/marcus_dslr.jpg,Karlsruhe Institute of Technology,Postdoc Researcher,,,"Graph Algorithms, Parameterized Complexity, Randomized Analysis, Geometry","Diameter Computation Between Theory and Practice","The diameter of a graph is defined as the maximum distance between any two vertices. Despite being a fundamental graph problem with many applications, there remains a large gap between well-understood theoretical algorithms and the approaches used for diameter computation in practice.
+
+In this talk we consider the iterative fringe upper bound (iFUB) by Crescenzi et al., and gain an intuition for its good performance on real-world networks with the exception of torus-like geometric graphs. To overcome this limitation, we develop a new algorithm with provable performance guarantees on (torus) random geometric graphs. Finally, we explore results from  engineering an efficient implementation of this algorithm and see how well it performs in practice."
+
+
+##
+## Yi-Shan Wu
+##
+Yi-Shan Wu,plenaryLZ,images/speakers/Yi-Shan.jpg,Academia Sinica,Postdoc Researcher,,,"Machine Learning, Reinforcement Learning, Statistical Learning Theory",,
+
+
+##
+## Julian Zimmert
+##
+Julian Zimmert,plenaryLZ,images/speakers/Julian_Zimmert.png,Google Research,Senior Research Scientist,,,"Online Learning, Reinforcement Learning","Change of Measure in Online Linear Optimization","Online Linear Optimization (OLO) is a fundamental problem solved with canonical algorithms such as Follow the Regularized Leader (FTRL) or Online Mirror Descent (OMD). 
+
+Many sequential decision problems are solved by reducing them to OLO. While this strategy has proven extremely successful, regret components external to OLO sometimes lead to suboptimal overall regret. In a surprising number of distinct problems, a change-of-measure would immediately resolve the issue. 
+
+This talk presents the linear change-of-measure technique for FTRL and OMD. Although this technique isn't new, it is surprisingly little known and people continue to derive complicated solutions to problems that change-of-measure trivially resolves. "
+
