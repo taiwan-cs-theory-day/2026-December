@@ -65,12 +65,7 @@ function parseCSV(text) {
 
   if (field.length > 0 || row.length > 0) {
     row.push(field.trim());
-    if (
-  row.some(value => value !== '') &&
-  !row.every(value => value.trim() === '##')
-) {
-  rows.push(row);
-}
+    if (row.some(value => value !== '')) rows.push(row);
   }
 
   if (rows.length === 0) {
@@ -78,13 +73,19 @@ function parseCSV(text) {
   }
 
   const headers = rows.shift().map(value => value.toLowerCase().replace(/\s+/g, '').replace(/[^a-z0-9_]/g, ''));
-  return rows.map((values) => {
-    const record = { idx: rows.indexOf(values) };
-    headers.forEach((header, columnIndex) => {
-      record[header] = values[columnIndex] || '';
+  return rows
+    .map((values, idx) => ({ values, idx }))
+    .filter(({ values }) => !(
+      /^##(?:\s|$)/.test(values[0] || '') &&
+      values.slice(1).every(value => value === '')
+    ))
+    .map(({ values, idx }) => {
+      const record = { idx };
+      headers.forEach((header, columnIndex) => {
+        record[header] = values[columnIndex] || '';
+      });
+      return record;
     });
-    return record;
-  });
 }
 
 function normalizeName(value) {
@@ -130,8 +131,8 @@ function main() {
   }
 
   const categoryCounts = new Map();
-  speakerRows.forEach((row, index) => {
-    const rowNumber = index + 2;
+  speakerRows.forEach((row) => {
+    const rowNumber = row.idx + 2;
     const category = String(row.category || '').trim().toLowerCase();
     if (!row.speaker) {
       errors.push(`Speaker row ${rowNumber} is missing a speaker name.`);
@@ -159,13 +160,6 @@ function main() {
 
   const scheduleText = fs.readFileSync(path.join(rootDir, 'data', 'schedule.csv'), 'utf8');
   const scheduleRows = parseCSV(scheduleText);
-  console.log('CSV headers:', Object.keys(speakerRows[0] || {}));
-
-speakerRows.forEach((row, index) => {
-  if (!row.category) {
-    console.log(`Missing category at row ${index + 2}:`, row);
-  }
-});
   const scheduleTimes = new Map();
   const scheduleSpeakerNames = new Set();
   speakerRows.forEach((row) => {
