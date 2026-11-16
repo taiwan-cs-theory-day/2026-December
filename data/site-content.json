@@ -20,9 +20,11 @@
   "specialThanks": [
   ],
   "registration": [
-    "Registration is in general free of charge for all participants. For non-student participants, if you would like to sponsor this event, we welcome sponsorship registration as well.",
+    "Registration is free for all participants. If you would like to sponsor this event, we welcome sponsorship registration as well.",
     "To manage logistics and arrangements, we kindly ask all participants to register. We look forward to seeing you at this event."
   ],
   "paymentLink": "https://example.com/payment",
-  "paymentLinkLabel": "Payment link"
+  "paymentLinkLabel": "I want to Sponsor!",
+  "sponsorshipFormLink": "",
+  "sponsorshipFormLinkLabel": "Certificate / receipt details"
 }

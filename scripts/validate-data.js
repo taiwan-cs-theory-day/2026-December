@@ -11,7 +11,7 @@ const requiredContentKeys = [
   'localOrganizers',
   'specialThanks'
 ];
-const validSpeakerCategories = new Set(['keynote', 'diskeynote', 'plenary', 'others', 'panel']);
+const validSpeakerCategories = new Set(['keynote', 'diskeynote', 'plenaryak','plenarylz', 'others', 'panel']);
 
 function parseCSV(text) {
   const rows = [];
@@ -65,9 +65,12 @@ function parseCSV(text) {
 
   if (field.length > 0 || row.length > 0) {
     row.push(field.trim());
-    if (row.some(value => value !== '')) {
-      rows.push(row);
-    }
+    if (
+  row.some(value => value !== '') &&
+  !row.every(value => value.trim() === '##')
+) {
+  rows.push(row);
+}
   }
 
   if (rows.length === 0) {
@@ -156,6 +159,13 @@ function main() {
 
   const scheduleText = fs.readFileSync(path.join(rootDir, 'data', 'schedule.csv'), 'utf8');
   const scheduleRows = parseCSV(scheduleText);
+  console.log('CSV headers:', Object.keys(speakerRows[0] || {}));
+
+speakerRows.forEach((row, index) => {
+  if (!row.category) {
+    console.log(`Missing category at row ${index + 2}:`, row);
+  }
+});
   const scheduleTimes = new Map();
   const scheduleSpeakerNames = new Set();
   speakerRows.forEach((row) => {
