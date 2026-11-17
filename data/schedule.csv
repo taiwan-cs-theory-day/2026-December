@@ -1,32 +1,42 @@
 day,date,time,type,title,speaker,chairman
-1,4/21,14:00 – 14:10,break,Opening,
-,,,,Keynote Lecture I,Ping-Chun Hsieh (NYCU)
-1,4/21,14:10 – 15:10,keynote,Keynote Lecture - Muon Outperforms Adam in Tail-End Associative Memory Learning,Vincent Y. F. Tan (National University of Singapore)
-1,4/21,15:10 – 15:30,break,Coffee Break,
-,,,,Invited Session I, Po-An Chen (NYCU)
-1,4/21,15:30 – 16:20,plenary,The Shape of Time: Analyzing End-to-End Latency Curves in Cyber-Physical Systems,Mario Günzel (Max-Planck Institute)
-1,4/21,16:20 – 17:10,plenary,A Radius-Sensitive Approximation Algorithm for Connected Submodular Maximization,Philip Cervenjak (University of Melbourne)
-,,,, Keynote Lecture II, Ya-Chun Liang (NTHU)
-2,4/22,09:00 – 10:00,keynote,Keynote Lecture - Primal and Dual Representations,Kazuhisa Makino (Kyoto University)
-2,4/22,10:00 – 10:20,break,Coffee Break,
-,,,, Invited Session II, Hao-Tsung Yang (NCU)
-2,4/22,10:20 – 11:10,plenary,Online TCP Acknowledgment under General Delays,William Umboh (University of Melbourne)
-2,4/22,11:10 – 12:00,plenary,Disjoint Paths in Expanders in Deterministic Almost-Linear Time via Hypergraph Perfect Matching,Shang-En Huang (National Taiwan University)
-2,4/22,12:10 – 12:40,panel,Lunch Panel - I (Chair: Evangelos Kipouridis (Max-Planck Institute)),"Ting-Jung Chang (NYCU), Yu-Chun Yen (NYCU), and Shang-En Huang (NTU)"
-2,4/22,12:40 – 13:10,panel,Lunch Panel - II (Chair: William Umboh (University of Melbourne)),"Michael Zlatin (Pomona College), Nadym Mallek (Hasso Plattner Institute), and Michelle Döring (Hasso Plattner Institute)"
-,,,, Invited Session III, Shin-Yu Tsai (NYCU)
-2,4/22,13:30 – 14:20,plenary,Hierarchical clustering: Approximation and beyond,Evangelos Kipouridis (Max-Planck Institute)
-2,4/22,14:20 – 15:10,plenary,Handling LP-Rounding for Hierarchical Clustering and Fitting Distances by Ultrametrics,Changyeol Lee (Yonsei University)
-2,4/22,15:10 – 15:30,break,Coffee Break,
-,,,, Invited Session IV,Joseph Chuang-Chieh Lin (NTOU)
-2,4/22,15:30 – 16:20,plenary,Reachability-Preserving Isomorphisms in Temporal Graphs,Michelle Döring (Hasso Plattner Institute)
-2,4/22,16:20 – 17:10,plenary,Graph Algorithmic Developments in Combinatorial Reconfiguration,Rin Saito (Tohoku University)
-,,,,Keynote Lecture III, Bertrand Miao-Tsong Lin (NYCU)
-3,4/23,09:00 – 10:00,keynote,Keynote Lecture - Voronoi diagrams in the presence of obstacles,Hee-Kap Ahn (POSTECH)
-3,4/23,10:00 – 10:20,break,Coffee Break,
-,,,, Invited Session V, Cheng-Kuan Lin (NYCU)
-3,4/23,10:20 – 11:10,plenary,Algorithmic Matroid Intersection Coloring,Michael Zlatin (Pomona College)
-3,4/23,11:10 – 12:00,plenary,Exploiting Tree-Like Structure in Graph Partitioning Problems,Nadym Mallek (Hasso Plattner Institute)
-3,4/23,12:00 – 13:30,panel,Lunch Panel,"Yung-Ju Chang (NYCU), Yi-Ting Chen (NYCU), and Mong-Jen Kao (NYCU)"
-3,4/23,13:30 – 14:20,plenary,Open Problem Session
-3,4/23,16:00 - 18:00,break,Group Excursion
+,,,,Invited Talk Session I,
+1,12/7,14:00 – 15:00,plenary,TBA,Hsiang-Hsuan Liu (Utrecht University)
+1,12/7,15:00 – 15:30,break,Coffee Break,
+1,12/7,15:30 – 16:20,plenary,TBA,Colin Cleveland (King’s College)
+1,12/7,16:20 – 17:10,plenary,On the FirstFit Algorithm for Online Unit-Interval Coloring,B.H.A.F. Bob Krekelberg (Utrecht University)
+2,12/8,10:00 – 10:10,break,Opening,
+,,,, Distinguished Keynote Lecture,
+2,12/8,10:10 – 11:30,keynote,Compact oracles for reachability and approximate distances in planar digraphs,Mikkel Thorup (University of Copenhagen)
+2,12/8,12:10 – 13:30,break,Lunch,
+,,,, Invited Talk Session II, 
+2,12/8,13:30 – 14:20,plenary,Change of Measure in Online Linear Optimization,Julian Zimmert (Google Research)
+2,12/8,14:20 – 15:10,plenary,TBA,Chen-Yu Wei (University of Virginia)
+2,12/8,15:10 – 15:30,break,Coffee Break,
+,,,, Invited Talk Session III,
+2,12/8,15:30 – 16:20,plenary,Weakly Supervised Learning: A Contamination Perspective,Chao-Kai Chiang (National Yang-Ming Chiao-Tung University)
+2,12/8,16:20 – 17:10,plenary,TBA,Yi-Shan Wu (Academia Sinica)
+,,,,Keynote Lecture I,
+3,12/9,09:00 – 10:00,keynote,k-Clustering via Iterative Randomized Rounding,Jarosław (Jarek) Byrka (University of Wrocław)
+3,12/9,10:00 – 10:20,break,Coffee Break,
+,,,, Invited Talk Session IV,
+3,12/9,10:20 – 11:10,plenary,TBA,Shuichi Hirahara (National Institute of Informatics)
+3,12/9,11:10 – 12:00,plenary,TBA,Eunjin Oh (POSTECH)
+3,12/9,12:00 – 13:30,break,Lunch,
+,,,, Invited Talk Session V,
+3,12/9,13:30 – 14:20,plenary,When Exact Algorithms Are Elusive: What Should We Relax?,Peter Rossmanith (RWTH Aachen University)
+3,12/9,14:20 – 15:10,plenary,TBA,Li-Hsuan Chen (National Chung-Cheng University)
+3,12/9,15:10 – 15:30,break,Coffee Break,
+,,,, Invited Talk Session VI,
+3,12/9,15:30 – 16:20,plenary,A Constructive FPT Algorithm for Integer Cone Optimization with Convex Costs,Felix Ohnesorge (Kiel University)
+3,12/9,16:20 – 17:10,plenary,TBA,TBA
+,,,,Keynote Lecture II,
+4,12/10,09:00 – 10:00,keynote,Self-Stabilizing Leader Election in Population Protocols,Ho-Lin Chen (National Taiwan University)
+4,12/10,10:00 – 10:20,break,Coffee Break,
+,,,, Invited Talk Session VII,
+4,12/10,10:20 – 11:10,plenary,TBA,Yu-Fang Chen (Academia Sinica)
+4,12/10,11:10 – 12:00,plenary,Beyond Gomory–Hu: Maximum Information about All-Pairs Minimum Cuts in $O(n)$ Space,Koustav Bhanja (Weizmann Institute of Science)
+4,12/10,12:00 – 13:30,break,Lunch,
+,,,, Invited Session VIII,
+4,12/10,13:30 – 14:20,plenary,Space-efficient Streaming Algorithms for Two-Dimensional Congruence Testing,Ben Tsun-Ming Cheung (National Tsing-Hua University)
+4,12/10,14:20 – 15:10,plenary,Diameter Computation Between Theory and Practice,Marcus Wilhelm (Karlsruhe Institute of Technology)
+4,12/10,15:10 – 15:30,break,Coffee Break,
