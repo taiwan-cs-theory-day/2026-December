@@ -33,14 +33,25 @@ function makeSpeakerLinks(value) {
 function showScheduleSpeaker(name) {
   const speaker = getSpeakerRecord(name);
   if (!speaker) return;
-  document.getElementById('speaker-modal-photo').src = speaker.photo;
-  document.getElementById('speaker-modal-name').textContent = speaker.name;
-  document.getElementById('speaker-modal-affiliation').textContent = speaker.affiliation;
-  document.getElementById('speaker-modal-talk-title').textContent = speaker.talkTitle;
-  document.getElementById('speaker-modal-abstract').textContent = speaker.abstract;
-  document.getElementById('speaker-modal-talk-title-row').style.display = speaker.talkTitle ? 'block' : 'none';
-  document.getElementById('speaker-modal-abstract-row').style.display = speaker.abstract ? 'block' : 'none';
-  document.getElementById('speaker-modal').classList.add('show');
+  const modal = document.getElementById('speaker-modal');
+  const photo = document.getElementById('speaker-modal-photo');
+  const nameNode = document.getElementById('speaker-modal-name');
+  const affiliation = document.getElementById('speaker-modal-affiliation');
+  const talkTitle = document.getElementById('speaker-modal-talk-title');
+  const abstract = document.getElementById('speaker-modal-abstract');
+  const talkTitleRow = document.getElementById('speaker-modal-talk-title-row');
+  const abstractRow = document.getElementById('speaker-modal-abstract-row');
+  if (!modal || !photo || !nameNode || !affiliation || !talkTitle || !abstract || !talkTitleRow || !abstractRow) return;
+
+  photo.src = speaker.photo || '';
+  nameNode.textContent = speaker.name || '';
+  affiliation.textContent = speaker.affiliation || '';
+  talkTitle.textContent = speaker.talkTitle || '';
+  abstract.textContent = speaker.abstract || '';
+  talkTitleRow.style.display = speaker.talkTitle ? 'block' : 'none';
+  abstractRow.style.display = speaker.abstract ? 'block' : 'none';
+  modal.classList.add('show');
+  document.body.classList.add('modal-open');
 }
 
 function bindSpeakerLinks(container) {
@@ -156,7 +167,10 @@ async function initSchedule() {
   if (modal && !modal.dataset.attached) {
     modal.dataset.attached = 'true';
     modal.addEventListener('click', event => {
-      if (event.target === modal || event.target.classList.contains('speaker-modal-close')) modal.classList.remove('show');
+      if (event.target === modal || event.target.classList.contains('speaker-modal-close')) {
+        modal.classList.remove('show');
+        document.body.classList.remove('modal-open');
+      }
     });
   }
 

@@ -77,16 +77,27 @@
   }
 
   function loadSpeakers() {
-    return loadCSV('data/Theoryday_2026_DEC.csv').then(rows => rows.map(row => ({
-      ...row,
-      name: row.speaker || '',
-      tabTitle: (row.speaker || '').split('/')[0].trim(),
-      photo: row.image_link || '',
-      talkTitle: row.talktitle || '',
-      type: row.category === 'keynote' ? 'Keynote Lecture'
-        : row.category === 'diskeynote' ? 'Distinguished Keynote'
-        : 'Invited Talks'
-    })));
+    return loadCSV('data/Theoryday_2026_DEC.csv').then(rows => rows
+      .filter(row => {
+        const speaker = String(row.speaker || '').trim();
+        return speaker && !speaker.startsWith('#');
+      })
+      .map(row => {
+        const rawCategory = String(row.category || '').trim().toLowerCase();
+        const normalizedCategory = rawCategory.startsWith('plenary') ? 'plenary' : rawCategory;
+        return {
+          ...row,
+          categoryRaw: rawCategory,
+          category: normalizedCategory,
+          name: row.speaker || '',
+          tabTitle: (row.speaker || '').split('/')[0].trim(),
+          photo: row.image_link || '',
+          talkTitle: row.talktitle || '',
+          type: normalizedCategory === 'keynote' ? 'Keynote Lecture'
+            : normalizedCategory === 'diskeynote' ? 'Distinguished Keynote'
+            : 'Invited Talks'
+        };
+      }));
   }
 
   window.siteData = { loadCSV, loadJSON, loadSpeakers, parseCSV };
