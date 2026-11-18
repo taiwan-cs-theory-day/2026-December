@@ -13,6 +13,7 @@
     'index.html': { title: 'NYCU Theory Day 2026', file: 'index.html' },
     'speaker.html':{title:'Speaker – NYCU Theory Day 2026', file:'speaker.html'},
     'program.html': { title: 'Program – NYCU Theory Day 2026', file: 'program.html' },
+    'venue.html': { title: 'Venue & Transportation – NYCU Theory Day 2026', file: 'venue.html' },
     'registration.html': { title: 'Registration – NYCU Theory Day 2026', file: 'registration.html' },
     'theory-day-april.html': { title: 'Past Events – NYCU Theory Day 2026', file: 'theory-day-april.html' },
     'city-tour.html': { title: 'City Tour – NYCU Theory Day 2026', file: 'city-tour.html' }
@@ -122,12 +123,16 @@
             if (typeof initSiteContent === 'function') {
               try { initSiteContent(); } catch (e) { console.error('initSiteContent error', e); }
             }
+            if (typeof initVenuePage === 'function') {
+              try { initVenuePage(); } catch (e) { console.error('initVenuePage error', e); }
+            }
           }).catch(err => {
             console.error('Error loading scripts from page fragment', err);
             // best-effort: still attempt initialization
             if (typeof initSchedule === 'function') try { initSchedule(); } catch(e){}
             if (typeof initSpeakers === 'function') try { initSpeakers(); } catch(e){}
             if (typeof initSiteContent === 'function') try { initSiteContent(); } catch(e){}
+            if (typeof initVenuePage === 'function') try { initVenuePage(); } catch(e) { console.error('initVenuePage error', e); }
           });
         }
         
@@ -194,6 +199,11 @@
         return;
       }
       
+      // Let the browser handle pages that are not configured for SPA navigation.
+      if (!pages[href]) {
+        return;
+      }
+
       link.addEventListener('click', function(e) {
         e.preventDefault();
         updateActiveLink(href);

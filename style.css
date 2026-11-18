@@ -218,7 +218,7 @@ a:hover { text-decoration: underline; }
   padding: 72px var(--gutter);
   background-color: var(--accent);
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15)),
-                    url('images/viewbannerimage_2.jpg');
+                    url('images/banners/viewbannerimage_2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -506,6 +506,113 @@ h2 { font-size: 1.25rem; color: var(--accent); margin-bottom: rem; }
 
 /* small muted text */
 .tbd { font-style: italic; color: var(--text-muted); }
+
+/* ======================================================
+   VENUE & TRANSPORTATION
+====================================================== */
+.venue-page .venue-kicker {
+  margin: 0 0 6px;
+  color: var(--text-muted);
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.venue-page > h1 {
+  color: var(--accent);
+}
+
+.venue-address {
+  margin: 0;
+}
+
+.venue-grid,
+.transport-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.venue-card,
+.transport-card {
+  margin: 0;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--accent);
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.venue-card h3,
+.transport-card h3 {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 1.15rem;
+}
+
+.venue-card p,
+.transport-card p {
+  margin: 8px 0;
+}
+
+.venue-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.venue-note {
+  padding: 12px 16px;
+  border-left: 4px solid #b17a16;
+  background: #fff8e9;
+  color: #55451f;
+}
+
+.venue-map {
+  margin: 18px 0 0;
+}
+
+.venue-map img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.venue-map figcaption {
+  margin-top: 8px;
+  color: var(--text-muted);
+  font-size: .9rem;
+}
+
+.venue-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding-left: 20px;
+}
+
+.venue-page a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  .venue-grid,
+  .transport-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ======================================================
    SCHEDULE (grid layout)
