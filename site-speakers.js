@@ -13,7 +13,14 @@ async function initSpeakers() {
   let activeCategory = content.speakerCategories[0]?.key || '';
 
   function speakersFor(category) {
-    return speakers.filter(speaker => speaker.category === category);
+    const key = String(category || '').trim().toLowerCase();
+    return speakers.filter(speaker => {
+      const raw = String(speaker.categoryRaw || '').trim().toLowerCase();
+      const normalized = String(speaker.category || '').trim().toLowerCase();
+      if (normalized === key || raw === key) return true;
+      if (key === 'plenary') return raw.startsWith('plenary') || normalized === 'plenary';
+      return false;
+    });
   }
 
   function selectSpeaker(speaker, button) {
@@ -49,7 +56,10 @@ async function initSpeakers() {
     });
     speakerTabs.replaceChildren();
     const records = speakersFor(category.key);
-    const useTwoRows = category.key === 'plenaryAK' || category.key === 'plenaryLZ';
+    const normalizedCategoryKey = String(category.key || '').trim().toLowerCase();
+    const useTwoRows = normalizedCategoryKey === 'plenaryak'
+      || normalizedCategoryKey === 'plenarylz'
+      || normalizedCategoryKey === 'plenary';
     speakerTabs.classList.toggle('two-rows', useTwoRows);
     if (useTwoRows) {
       const columns = Math.max(1, Math.ceil(records.length / 2));
