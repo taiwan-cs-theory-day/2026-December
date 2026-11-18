@@ -14,6 +14,7 @@
     'speaker.html':{title:'Speaker – NYCU Theory Day 2026', file:'speaker.html'},
     'program.html': { title: 'Program – NYCU Theory Day 2026', file: 'program.html' },
     'registration.html': { title: 'Registration – NYCU Theory Day 2026', file: 'registration.html' },
+    'theory-day-april.html': { title: 'Past Events – NYCU Theory Day 2026', file: 'theory-day-april.html' },
     'city-tour.html': { title: 'City Tour – NYCU Theory Day 2026', file: 'city-tour.html' }
   };
 
