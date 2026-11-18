@@ -9,6 +9,8 @@ Use these files as the primary content sources:
 - `data/Theoryday_2026_DEC.csv` contains speaker profile data: speaker name, category, affiliation, title, expertise, talk title, abstract, and the talk date/time. This is the main data source for the speaker pages and speaker lists.
 - `data/schedule.csv` contains schedule-only rows: day, date, time, type, session title, and presenter/organizer labels. This file is the source of truth for all session timings and dates.
 - `data/site-content.json` contains reusable text like About, event information, organizer lists, sponsor acknowledgements, and category labels. Do not rename keys.
+- `venue-data.js` contains the venue, transportation, parking, and useful-link content for the venue page.
+- `images/banners/` contains the homepage carousel and banner images.
 
 ### Rules for editing data
 

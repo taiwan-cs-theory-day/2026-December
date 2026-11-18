@@ -55,21 +55,30 @@ async function initSiteContent() {
     }));
   }
 
-  const paymentLink = document.getElementById('registration-payment');
-  if (paymentLink) {
+  const sponsorshipActions = document.getElementById('sponsorship-actions');
+  if (sponsorshipActions) {
     const url = content.paymentLink || content.paymentUrl || '';
-    paymentLink.replaceChildren();
-    if (url) {
-      const label = document.createElement('p');
-      label.innerHTML = '<strong>Payment link:</strong>';
+    const paymentButton = document.getElementById('sponsorship-payment-button');
+    if (paymentButton) {
+      paymentButton.textContent = content.paymentLinkLabel || 'I want to Sponsor!';
+      if (url) {
+        paymentButton.href = url;
+      } else {
+        paymentButton.removeAttribute('href');
+        paymentButton.setAttribute('aria-disabled', 'true');
+        paymentButton.textContent = 'Online payment link coming soon.';
+      }
+    }
+
+    sponsorshipActions.querySelectorAll('.sponsorship-form-button').forEach(link => link.remove());
+    if (content.sponsorshipFormLink) {
       const link = document.createElement('a');
-      link.href = url;
+      link.className = 'btn sponsorship-form-button';
+      link.href = content.sponsorshipFormLink;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      link.textContent = content.paymentLinkLabel || 'Open payment page';
-      paymentLink.append(label, link);
-    } else {
-      paymentLink.innerHTML = '<strong>Payment link:</strong> <span>Coming soon</span>';
+      link.textContent = content.sponsorshipFormLinkLabel || 'Certificate / receipt details';
+      sponsorshipActions.append(link);
     }
   }
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Venue &amp; Transportation – NYCU Theory Day 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-container">
+    <main>
+      <div id="venue-page" class="venue-page"></div>
+      <script src="venue-data.js"></script>
+    </main>
+
+    <script src="cache-utils.js"></script>
+    <script>
+      if (window.cacheUtils && typeof window.cacheUtils.setupAutoUpdateCheck === 'function') {
+        window.cacheUtils.setupAutoUpdateCheck({ versionUrl: 'site-version.json', intervalMs: 120000 });
+      }
+    </script>
+    <script src="load-footer.js"></script>
+    <script src="load-header.js"></script>
+    <script src="load-hero.js"></script>
+    <script src="page-loader.js?v=2026-11-18-1"></script>
+    <script src="banner.js"></script>
+  </div>
+</body>
+</html>
