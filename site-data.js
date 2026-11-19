@@ -91,7 +91,8 @@
           category: normalizedCategory,
           name: row.speaker || '',
           tabTitle: (row.speaker || '').split('/')[0].trim(),
-          photo: row.image_link || '',
+          // Speakers without a photo get a grey silhouette instead of an empty frame
+          photo: String(row.image_link || '').trim() || 'images/speakers/placeholder.svg',
           talkTitle: row.talktitle || '',
           type: normalizedCategory === 'keynote' ? 'Keynote Lecture'
             : normalizedCategory === 'diskeynote' ? 'Distinguished Keynote'
