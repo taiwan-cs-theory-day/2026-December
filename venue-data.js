@@ -1,6 +1,8 @@
 window.venuePageData = {
   address: 'National Yang Ming Chiao Tung University, Guangfu Campus, No. 1001, University Road, East District, Hsinchu City 300093, Taiwan',
   mapUrl: 'https://maps.google.com/?q=National+Yang+Ming+Chiao+Tung+University+Guangfu+Campus',
+  // Bump ?v= whenever images/schoolmap.jpg changes, so browsers/CDN fetch the new file
+  mapImage: 'images/schoolmap.jpg?v=2026-11-19-1',
   venues: [
     {
       marker: 'A',
@@ -173,8 +175,8 @@ function initVenuePage() {
       <h2 id="campus-map-title">Campus Map &amp; Finding the Talks</h2>
       <p>Use the A, B, and C markers on the map to find the building for your session.</p>
       <figure class="venue-map">
-        <a href="images/schoolmap.jpg" ${ext} title="Open full-size map">
-          <img src="images/schoolmap.jpg" alt="NYCU Hsinchu Guangfu Campus map with venues A (Science Building 3) and B, C (Engineering Building 4) marked" loading="lazy" />
+        <a href="${data.mapImage}" ${ext} title="Open full-size map">
+          <img src="${data.mapImage}" alt="NYCU Hsinchu Guangfu Campus map with venues A (Science Building 3) and B, C (Engineering Building 4) marked" loading="lazy" />
         </a>
         <figcaption>Venue A: Science Building 3, B1. Venues B and C: Engineering Building 4, B1. Click the map to enlarge.</figcaption>
       </figure>
