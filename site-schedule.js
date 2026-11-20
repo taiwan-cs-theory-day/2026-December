@@ -50,6 +50,8 @@ function showScheduleSpeaker(name) {
   abstract.textContent = speaker.abstract || '';
   talkTitleRow.style.display = speaker.talkTitle ? 'block' : 'none';
   abstractRow.style.display = speaker.abstract ? 'block' : 'none';
+  window.siteData?.renderMath?.(talkTitle);
+  window.siteData?.renderMath?.(abstract);
   modal.classList.add('show');
   document.body.classList.add('modal-open');
 }
@@ -96,6 +98,7 @@ function renderScheduleDay(day) {
   });
 
   bindSpeakerLinks(container);
+  window.siteData?.renderMath?.(container);
 }
 
 async function initSchedule() {

@@ -47,6 +47,8 @@ async function initSpeakers() {
     document.getElementById('speaker-abstract-box').style.display = hasDetails ? 'block' : 'none';
     document.getElementById('speaker-talk-title').textContent = speaker.talkTitle;
     document.getElementById('speaker-abstract').textContent = speaker.abstract;
+    window.siteData.renderMath(document.getElementById('speaker-talk-title'));
+    window.siteData.renderMath(document.getElementById('speaker-abstract'));
   }
 
   function renderCategory(category) {

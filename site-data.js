@@ -101,5 +101,52 @@
       }));
   }
 
-  window.siteData = { loadCSV, loadJSON, loadSpeakers, parseCSV };
+  // Math in titles/abstracts is written as LaTeX ($...$, \[...\]); KaTeX is loaded only when needed.
+  const KATEX_BASE = 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/';
+  let katexPromise = null;
+
+  function loadScript(src) {
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = resolve;
+      script.onerror = () => reject(new Error(`Failed to load ${src}`));
+      document.head.appendChild(script);
+    });
+  }
+
+  function loadKatex() {
+    if (!katexPromise) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = `${KATEX_BASE}katex.min.css`;
+      document.head.appendChild(link);
+      katexPromise = loadScript(`${KATEX_BASE}katex.min.js`)
+        .then(() => loadScript(`${KATEX_BASE}contrib/auto-render.min.js`))
+        .catch(error => {
+          katexPromise = null;
+          throw error;
+        });
+    }
+    return katexPromise;
+  }
+
+  const MATH_PATTERN = /\$[^$]+\$|\\\[|\\\(/;
+
+  function renderMath(element) {
+    if (!element || !MATH_PATTERN.test(element.textContent || '')) return Promise.resolve();
+    return loadKatex().then(() => {
+      window.renderMathInElement(element, {
+        delimiters: [
+          { left: '\\[', right: '\\]', display: true },
+          { left: '$$', right: '$$', display: true },
+          { left: '\\(', right: '\\)', display: false },
+          { left: '$', right: '$', display: false }
+        ],
+        throwOnError: false
+      });
+    }).catch(error => console.warn('Math rendering skipped:', error));
+  }
+
+  window.siteData = { loadCSV, loadJSON, loadSpeakers, parseCSV, renderMath };
 })();
