@@ -160,7 +160,7 @@ In this talk we consider the iterative fringe upper bound (iFUB) by Crescenzi et
 ##
 ## Y'i-Shan Wu
 ##
-Yi-Shan Wu,plenaryLZ,images/speakers/Yi-Shan.jpg,Academia Sinica,Postdoc Researcher,,,"Machine Learning, Reinforcement Learning, Statistical Learning Theory",,
+Yi-Shan Wu,plenaryLZ,images/speakers/Yi-Shan.jpg,Academia Sinica,Postdoc Researcher,,,"Machine Learning, Reinforcement Learning, Statistical Learning Theory","A Sample-Efficient Way to Learn with Theoretical Guarantees","How can we learn effectively from limited data while retaining meaningful performance guarantees? A standard approach optimizes a training objective over the full dataset, often using mini-batch SGD. This talk presents a sequential approach that partitions the training data into subsets and learns in stages. What is learned at each stage guides the next, while risk guarantees are carried forward along the learning path."
 
 
 ##
