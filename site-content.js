@@ -66,7 +66,8 @@ async function initSiteContent() {
       } else {
         paymentButton.removeAttribute('href');
         paymentButton.setAttribute('aria-disabled', 'true');
-        paymentButton.textContent = 'Online payment link coming soon.';
+        paymentButton.textContent = 'Opening soon';
+        paymentButton.classList.add('is-disabled');
       }
     }
 

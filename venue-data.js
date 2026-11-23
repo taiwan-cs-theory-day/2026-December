@@ -75,8 +75,8 @@ window.venuePageData = {
       title: { en: 'By High Speed Rail (THSR)', zh: '搭乘高鐵' },
       groups: [{
         items: [{
-          en: 'Get off at THSR Hsinchu Station, then take the shuttle bus to the “Chiao Tung University” stop, or take city bus Route 2 to the campus.',
-          zh: '高鐵新竹站下車，轉乘接駁專車至「交通大學站」下車，或轉市區 2 路公車至本校。'
+          en: 'Get off at THSR Hsinchu Station, then take the shuttle bus to the “Chiao Tung University” stop, or take the Pilot Bus to the campus.',
+          zh: '高鐵新竹站下車，轉乘接駁專車至「交通大學站」下車，或轉乘先導公車至本校。'
         }]
       }]
     },
@@ -125,36 +125,36 @@ function initVenuePage() {
 
   const data = window.venuePageData;
   const venueCards = data.venues.map(venue => `
-    <article class="venue-card">
+    <article class="venue-row">
       <span class="venue-marker" aria-label="Map marker ${venue.marker}">${venue.marker}</span>
       <h3>${venue.name}</h3>
-      <p><strong>Building:</strong> ${venue.building}</p>
-      <p><strong>Room / floor:</strong> ${venue.room}</p>
+      <p><span class="venue-field">Building:</span> ${venue.building}</p>
+      <p><span class="venue-field">Room / floor:</span> ${venue.room}</p>
     </article>
   `).join('');
   const ext = 'target="_blank" rel="noopener noreferrer"';
   const zh = text => `<span class="zh">${text}</span>`;
+  // Each piece of text is shown as an English line with the Chinese directly below it.
+  const pair = (item, extra = '') => `<p class="bi">${item.en}${extra}<span class="zh">${item.zh}</span></p>`;
   const renderRoute = route => route
-    ? `<p class="transport-route">${route.en}<br>${zh(route.zh)}</p>`
+    ? `<p class="transport-route">${route.en}<span class="zh">${route.zh}</span></p>`
     : '';
   const renderGroup = group => {
     const link = group.link ? ` (<a href="${group.link.href}" ${ext}>${group.link.label}</a>)` : '';
-    if (!group.label) {
-      return group.items.map(item => `<p>${item.en}${link}<br>${zh(item.zh)}</p>`).join('') + renderRoute(group.route);
-    }
-    const label = `<strong>${group.label.en}</strong> ${zh(group.label.zh)}`;
+    const label = group.label
+      ? `<h4>${group.label.en} <span class="zh">${group.label.zh}</span></h4>`
+      : '';
     const body = group.ordered
-      ? `<ol>${group.items.map(item => `<li>${item.en}<br>${zh(item.zh)}</li>`).join('')}</ol>`
-      : group.items.map(item => `<br>${item.en}${link}<br>${zh(item.zh)}`).join('');
-    return `<li>${label}${body}${renderRoute(group.route)}</li>`;
+      ? `<ol>${group.items.map(item => `<li>${pair(item)}</li>`).join('')}</ol>`
+      : group.items.map(item => pair(item, link)).join('');
+    return `<div class="transport-group">${label}${body}${renderRoute(group.route)}</div>`;
   };
-  const transportList = data.transportation.map(option => {
-    const labelled = option.groups.some(g => g.label);
-    const inner = labelled
-      ? `<ul>${option.groups.map(renderGroup).join('')}</ul>`
-      : option.groups.map(renderGroup).join('');
-    return `<li><strong><span aria-hidden="true">${option.icon}</span> ${option.title.en}</strong> ${zh(option.title.zh)}${inner}</li>`;
-  }).join('');
+  const transportList = data.transportation.map(option => `
+    <div class="transport-mode">
+      <h3 class="transport-title">${option.title.en}<span class="zh">${option.title.zh}</span></h3>
+      <div class="transport-body">${option.groups.map(renderGroup).join('')}</div>
+    </div>
+  `).join('');
   const hotels = data.accommodation.map(hotel => `
     <li>${hotel.name} (<a href="${hotel.href}" ${ext}>Link 連結</a>)</li>
   `).join('');
@@ -169,7 +169,7 @@ function initVenuePage() {
       <h2 id="venue-location-title">Conference Venues</h2>
       <p class="venue-address">${data.address}</p>
       <p><a href="${data.mapUrl}" ${ext}>Open the campus in Google Maps</a></p>
-      <div class="venue-grid">${venueCards}</div>
+      <div class="venue-table">${venueCards}</div>
     </section>
     <section aria-labelledby="campus-map-title">
       <h2 id="campus-map-title">Campus Map &amp; Finding the Talks</h2>
@@ -183,7 +183,7 @@ function initVenuePage() {
     </section>
     <section aria-labelledby="transport-title">
       <h2 id="transport-title">Transportation ${zh('交通資訊')}</h2>
-      <ul class="transport-list">${transportList}</ul>
+      <div class="transport-list">${transportList}</div>
     </section>
     <section aria-labelledby="hotel-title">
       <h2 id="hotel-title">Accommodation ${zh('住宿資訊')}</h2>
