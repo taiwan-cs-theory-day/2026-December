@@ -108,8 +108,7 @@ window.venuePageData = {
     { name: '新竹老爺酒店 (Hotel Royal Hsinchu)', href: 'https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E7%AB%B9%E8%80%81%E7%88%BA%E9%85%92%E5%BA%97' },
     { name: 'EPISODE 新竹伊普索凱悅尚選酒店 (EPISODE Hsinchu, JdV by Hyatt)', href: 'https://www.hyatt.com/jdv-by-hyatt/en-US/hsujd-episode-hsinchu' },
     { name: '和選旅 THE HO HOTEL', href: 'https://www.thehohotel.com.tw/' },
-    { name: '老爺商務旅館 (Royal Inn)', href: 'https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E7%AB%B9%E8%80%81%E7%88%BA%E5%95%86%E5%8B%99%E6%97%85%E9%A4%A8' },
-    { name: '新竹元首經典旅館 (Chief Hotel)', href: 'https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E7%AB%B9%E5%85%83%E9%A6%96%E7%B6%93%E5%85%B8%E6%97%85%E9%A4%A8' }
+    { name: '老爺商務旅館 (Royal Inn)', href: 'https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E7%AB%B9%E8%80%81%E7%88%BA%E5%95%86%E5%8B%99%E6%97%85%E9%A4%A8' }
   ],
   links: [
     { label: 'NYCU Official Website', href: 'https://www.nycu.edu.tw/' },

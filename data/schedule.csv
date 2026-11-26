@@ -2,7 +2,7 @@ day,date,time,type,title,speaker,chairman
 ,,,,Invited Talk Session I (合勤講堂),
 1,12/7,14:00 – 15:00,plenary,TBA,Hsiang-Hsuan Liu (Utrecht University)
 1,12/7,15:00 – 15:30,break,Coffee Break,
-1,12/7,15:30 – 16:20,plenary,TBA,Colin Cleveland (King’s College)
+1,12/7,15:30 – 16:20,plenary,TBA,Colin Cleveland (CentraleSupélec Paris-Saclay)
 1,12/7,16:20 – 17:10,plenary,On the FirstFit Algorithm for Online Unit-Interval Coloring,B.H.A.F. Bob Krekelberg (Utrecht University)
 2,12/8,10:00 – 10:10,break,Opening,
 ,,,, Distinguished Keynote Lecture (合勤講堂),
@@ -36,9 +36,9 @@ day,date,time,type,title,speaker,chairman
 4,12/10,10:20 – 11:10,plenary,TBA,Yu-Fang Chen (Academia Sinica)
 4,12/10,11:10 – 12:00,plenary,Beyond Gomory–Hu: Maximum Information about All-Pairs Minimum Cuts in $O(n)$ Space,Koustav Bhanja (Weizmann Institute of Science)
 4,12/10,12:00 – 13:30,break,Lunch,
-,,,, Invited Session VIII (工程四館 EDB27),
+,,,, Invited Talk Session VIII (工程四館 EDB27),
 4,12/10,13:30 – 14:20,plenary,Space-efficient Streaming Algorithms for Two-Dimensional Congruence Testing,Ben Tsun-Ming Cheung (National Tsing-Hua University)
 4,12/10,14:20 – 15:10,plenary,Diameter Computation Between Theory and Practice,Marcus Wilhelm (Karlsruhe Institute of Technology)
 4,12/10,15:10 – 15:30,break,Coffee Break,
-,,,, Invited Session IX (工程四館 EDB27),
+,,,, Invited Talk Session IX (工程四館 EDB27),
 4,12/10,15:30 – 16:20,plenary,TBA,Hsiang-Hsuan Liu (Utrecht University)
