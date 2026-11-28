@@ -1,11 +1,12 @@
 day,date,time,type,title,speaker,chairman
 ,,,,Invited Talk Session I,"Hao-Tsung Yang (Department of CSIE, National Central University)"
-1,12/7,14:00 – 15:00,plenary,TBA,Hsiang-Hsuan Liu (Utrecht University)
+1,12/7,14:00 – 15:00,plenary,Scheduling Unwanted Tasks with Locality by Routing,Hsiang-Hsuan Liu [Dec 7] (Utrecht University)
 1,12/7,15:00 – 15:30,break,Coffee Break,
 ,,,,Graduate Student Session,
-1,12/7,15:30 – 16:20,plenary,On the FirstFit Algorithm for Online Unit-Interval Coloring,B.H.A.F. Bob Krekelberg (Utrecht University)
-1,12/7,16:20 – 16:45,plenary,TBA
-1,12/7,16:45 – 17:10,plenary,TBA
+1,12/7,15:30 – 16:10,plenary,On the FirstFit Algorithm for Online Unit-Interval Coloring,B.H.A.F. Bob Krekelberg (Utrecht University)
+1,12/7,16:10 – 16:30,plenary,TBA,Yi-Hsun Chiu (NYCU)
+1,12/7,16:30 – 16:50,plenary,TBA,Chun-Chi Chien (NYCU)
+1,12/7,16:50 – 17:10,plenary,TBA,Jin-Yu Lin (NYCU)
 2,12/8,10:00 – 10:10,break,Opening,
 ,,,, Distinguished Keynote Lecture,"Mong-Jen Kao (Department of Computer Science, NYCU)"
 2,12/8,10:10 – 11:10,keynote,Compact oracles for reachability and approximate distances in planar digraphs,Mikkel Thorup (University of Copenhagen)
@@ -30,7 +31,7 @@ day,date,time,type,title,speaker,chairman
 3,12/9,15:10 – 15:30,break,Coffee Break,
 ,,,, Invited Talk Session VI,"Chuang-Chieh Lin (Department of Computer Science and Engineering, Natinoal Ocean University)"
 3,12/9,15:30 – 16:20,plenary,A Constructive FPT Algorithm for Integer Cone Optimization with Convex Costs,Felix Ohnesorge (Kiel University)
-3,12/9,16:20 – 17:10,plenary,TBA,TBA
+3,12/9,16:20 – 17:10,plenary,The maximum size of binary three-distance codes,Wei-Hsuan Yu (National Central University)
 ,,,, Invited Talk Session VII,"Ching-Yi Lai (Institute of Communication Engineering, NYCU)"
 4,12/10,10:20 – 11:10,plenary,TBA,Yu-Fang Chen (Academia Sinica)
 4,12/10,11:10 – 12:00,plenary,Beyond Gomory–Hu: Maximum Information about All-Pairs Minimum Cuts in $O(n)$ Space,Koustav Bhanja (Weizmann Institute of Science)
@@ -40,5 +41,5 @@ day,date,time,type,title,speaker,chairman
 4,12/10,14:20 – 15:10,plenary,Diameter Computation Between Theory and Practice,Marcus Wilhelm (Karlsruhe Institute of Technology)
 4,12/10,15:10 – 15:30,break,Coffee Break,
 ,,,, Invited Talk Session IX,
-4,12/10,15:30 – 16:20,plenary,TBA,Hsiang-Hsuan Liu (Utrecht University)
+4,12/10,15:30 – 16:20,plenary,The Power of Cycles in Online Firefighting,Hsiang-Hsuan Liu [Dec 10] (Utrecht University)
 4,12/10,16:20 – 17:10,plenary,TBA,Colin Cleveland (King’s College)

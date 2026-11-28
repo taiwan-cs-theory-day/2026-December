@@ -105,7 +105,27 @@ In this talk, I will discuss recent progress towards understanding the performan
 ##
 ## H'siang-Hsuan Liu
 ##
-Hsiang-Hsuan Liu,plenaryAK,images/speakers/Elison.jpg,Utrecht University,Assistant Professor,,,"Combinatorial Optimization, Online Algorithms, Approximation Algorithms",,,
+Hsiang-Hsuan Liu [Dec 7],plenaryAK,images/speakers/Elison.jpg,Utrecht University,Assistant Professor,,,"Combinatorial Optimization, Online Algorithms, Approximation Algorithms","Scheduling Unwanted Tasks with Locality by Routing","Academics have their own research interests and teaching preferences. Unfortunately, not all teaching tasks are equally desirable. When assigning teaching tasks to colleagues, the workload depends not only on who teaches a course but also on what other courses they teach.
+
+Motivated by such scheduling problems, we study a strongly NP-hard routing problem on trees. Multiple servers serve requests located at vertices, starting from a common source and ending at their respective terminals. Each server travels free of cost along its source-to-terminal path and pays for traversing other edges. The objective is to minimize the maximum cost among the servers. Balancing their loads is challenging because the cost of traversing an edge may vary across servers.
+
+We propose a polynomial-time 4-approximation algorithm using a two-phase parametric pruning framework. The first phase partitions requests into packets, while the second assigns these packets to servers. The main challenge is to relate the quality of the partition and the resulting load balance to the hypothetical optimal values in the framework. For general graphs, we establish that achieving an approximation ratio better than 2 is impossible unless P = NP.
+
+The problem generalizes unrelated machine scheduling and other classical scheduling problems, providing a graph-based framework for modeling scheduling with locality.
+
+This is joint work with Fu-Hong Liu, published at MFCS 2024.",
+
+
+##
+## H'siang-Hsuan Liu
+##
+Hsiang-Hsuan Liu [Dec 10],plenaryAK,images/speakers/Elison.jpg,Utrecht University,Assistant Professor,,,"Combinatorial Optimization, Online Algorithms, Approximation Algorithms","The Power of Cycles in Online Firefighting","The firefighting game is a fundamental problem in theoretical computer science, modeling the containment of a spreading process under limited defensive resources. In each round, an algorithm may protect a set of vertices by placing firefighters on them, preventing the fire from spreading to those vertices. Vertices that are never reached by the fire are said to be saved. The goal is to maximize the number of saved vertices. While the offline version has been extensively studied, much less is known about the competitive complexity of the online variant, where the underlying graph is known in advance but the number of available firefighters in each round is revealed online.
+
+We study how graph structure governs the power of the adversary in the online firefighting game. On trees, the problem is known to be 2-competitive (Coupechoux et al., 2019), a result that relies on a strong structural alignment between the online algorithm and the offline optimal solution throughout the process. We show that this alignment breaks down as soon as cycles are present. In particular, the algorithm and the offline optimal solution may break a cycle differently, or even break different cycles, and therefore operate on fundamentally different residual graphs. As a result, the adversary gains additional leverage by steering the process along residual graph structures that no longer admit a direct comparison between the algorithm and the offline optimal solution.
+
+Our main result shows that the presence of a single cycle already increases the competitive complexity of the firefighting game dramatically. We first show that even on a tadpole graph (a cycle with a tail), no deterministic online algorithm can achieve a competitive ratio better than Ω(√n), where n is the number of vertices. We complement this lower bound with matching upper bounds by designing an O(√n)-competitive online algorithm for 1-almost trees, that is, graphs obtained from a tree by adding at most one edge. Furthermore, we extend our framework to cactus graphs and prove that, despite the presence of multiple cycles, the competitive complexity remains Θ(√n) as long as the cycles do not share edges. Together, these results yield a tight characterization of the adversarial power induced by cycles with non-overlapping edges. Finally, considering that cactus graphs have treewidth of 2, we study a variant in which firefighters are released in pairs, that is, an even number of firefighters becomes available in each round. Surprisingly, the competitive complexity is significantly reduced to 3-competitive for this setting.
+
+This is joint work with Max Hugen and Bob Krekelberg, published at MFCS 2026.",
 
 
 ##
