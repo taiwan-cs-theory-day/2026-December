@@ -1,44 +1,44 @@
 day,date,time,type,title,speaker,chairman
-,,,,Invited Talk Session I,
+,,,,Invited Talk Session I,"Hao-Tsung Yang (Department of CSIE, National Central University)"
 1,12/7,14:00 – 15:00,plenary,TBA,Hsiang-Hsuan Liu (Utrecht University)
 1,12/7,15:00 – 15:30,break,Coffee Break,
-1,12/7,15:30 – 16:20,plenary,TBA,Colin Cleveland (King’s College)
-1,12/7,16:20 – 17:10,plenary,On the FirstFit Algorithm for Online Unit-Interval Coloring,B.H.A.F. Bob Krekelberg (Utrecht University)
+,,,,Graduate Student Session,
+1,12/7,15:30 – 16:20,plenary,On the FirstFit Algorithm for Online Unit-Interval Coloring,B.H.A.F. Bob Krekelberg (Utrecht University)
+1,12/7,16:20 – 16:45,plenary,TBA
+1,12/7,16:45 – 17:10,plenary,TBA
 2,12/8,10:00 – 10:10,break,Opening,
-,,,, Distinguished Keynote Lecture,
-2,12/8,10:10 – 11:30,keynote,Compact oracles for reachability and approximate distances in planar digraphs,Mikkel Thorup (University of Copenhagen)
+,,,, Distinguished Keynote Lecture,"Mong-Jen Kao (Department of Computer Science, NYCU)"
+2,12/8,10:10 – 11:10,keynote,Compact oracles for reachability and approximate distances in planar digraphs,Mikkel Thorup (University of Copenhagen)
+,,,, Keynote Lecture I,
+2,12/8,11:10 – 12:10,keynote,Self-Stabilizing Leader Election in Population Protocols,Ho-Lin Chen (National Taiwan University)
 2,12/8,12:10 – 13:30,break,Lunch,
-,,,, Invited Talk Session II, 
+,,,, Invited Talk Session II,"Po-An Chen (Institute of Information Management, NYCU)"
 2,12/8,13:30 – 14:20,plenary,Change of Measure in Online Linear Optimization,Julian Zimmert (Google Research)
 2,12/8,14:20 – 15:10,plenary,TBA,Chen-Yu Wei (University of Virginia)
 2,12/8,15:10 – 15:30,break,Coffee Break,
-,,,, Invited Talk Session III,
+,,,, Invited Talk Session III,"Lo Pang-Yun Ting (Department of Computer Science, NYCU)"
 2,12/8,15:30 – 16:20,plenary,Weakly Supervised Learning: A Contamination Perspective,Chao-Kai Chiang (National Yang-Ming Chiao-Tung University)
 2,12/8,16:20 – 17:10,plenary,TBA,Yi-Shan Wu (Academia Sinica)
-,,,,Keynote Lecture I,
-3,12/9,09:00 – 10:00,keynote,k-Clustering via Iterative Randomized Rounding,Jarosław (Jarek) Byrka (University of Wrocław)
-3,12/9,10:00 – 10:20,break,Coffee Break,
+,,,,Keynote Lecture II,"Yi-Hsuan Lin (Department of Applied Mathematics, NYCU)"
+3,12/9,10:10 – 11:10,keynote,k-Clustering via Iterative Randomized Rounding,Jarosław (Jarek) Byrka (University of Wrocław)
 ,,,, Invited Talk Session IV,
-3,12/9,10:20 – 11:10,plenary,TBA,Shuichi Hirahara (National Institute of Informatics)
 3,12/9,11:10 – 12:00,plenary,TBA,Eunjin Oh (POSTECH)
 3,12/9,12:00 – 13:30,break,Lunch,
-,,,, Invited Talk Session V,
-3,12/9,13:30 – 14:20,plenary,When Exact Algorithms Are Elusive: What Should We Relax?,Peter Rossmanith (RWTH Aachen University)
+,,,, Invited Talk Session V,"Shih-Yu Tsai (Department of Information Management and Finance, NYCU)"
+3,12/9,13:30 – 14:20,plenary,Space-efficient Streaming Algorithms for Two-Dimensional Congruence Testing,Ben Tsun-Ming Cheung (National Tsing-Hua University)
 3,12/9,14:20 – 15:10,plenary,TBA,Li-Hsuan Chen (National Chung-Cheng University)
 3,12/9,15:10 – 15:30,break,Coffee Break,
-,,,, Invited Talk Session VI,
+,,,, Invited Talk Session VI,"Chuang-Chieh Lin (Department of Computer Science and Engineering, Natinoal Ocean University)"
 3,12/9,15:30 – 16:20,plenary,A Constructive FPT Algorithm for Integer Cone Optimization with Convex Costs,Felix Ohnesorge (Kiel University)
 3,12/9,16:20 – 17:10,plenary,TBA,TBA
-,,,,Keynote Lecture II,
-4,12/10,09:00 – 10:00,keynote,Self-Stabilizing Leader Election in Population Protocols,Ho-Lin Chen (National Taiwan University)
-4,12/10,10:00 – 10:20,break,Coffee Break,
 ,,,, Invited Talk Session VII,"Ching-Yi Lai (Institute of Communication Engineering, NYCU)"
 4,12/10,10:20 – 11:10,plenary,TBA,Yu-Fang Chen (Academia Sinica)
 4,12/10,11:10 – 12:00,plenary,Beyond Gomory–Hu: Maximum Information about All-Pairs Minimum Cuts in $O(n)$ Space,Koustav Bhanja (Weizmann Institute of Science)
 4,12/10,12:00 – 13:30,break,Lunch,
-,,,, Invited Session VIII,
-4,12/10,13:30 – 14:20,plenary,Space-efficient Streaming Algorithms for Two-Dimensional Congruence Testing,Ben Tsun-Ming Cheung (National Tsing-Hua University)
+,,,, Invited Talk Session VIII,
+4,12/10,13:30 – 14:20,plenary,When Exact Algorithms Are Elusive: What Should We Relax?,Peter Rossmanith (RWTH Aachen University)
 4,12/10,14:20 – 15:10,plenary,Diameter Computation Between Theory and Practice,Marcus Wilhelm (Karlsruhe Institute of Technology)
 4,12/10,15:10 – 15:30,break,Coffee Break,
-,,,, Invited Session IX,
+,,,, Invited Talk Session IX,
 4,12/10,15:30 – 16:20,plenary,TBA,Hsiang-Hsuan Liu (Utrecht University)
+4,12/10,16:20 – 17:10,plenary,TBA,Colin Cleveland (King’s College)

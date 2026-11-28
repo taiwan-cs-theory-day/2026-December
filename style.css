@@ -799,7 +799,7 @@ footer {
 }
 
 .speaker-category-tab {
-  min-width: 180px;
+  min-width: 100px;
   padding: 14px 22px;
   border: 1px solid transparent;
   border-bottom: 3px solid transparent;
@@ -1082,6 +1082,28 @@ footer {
 .schedule-day .title { font-weight: 600; cursor: pointer; }
 .schedule-day .abstract { display: none; grid-column: 1 / -1; margin-top: 8px; }
 .schedule-day .talk.open .abstract { display: block; }
+
+.schedule-day .talk.separator-row {
+  border-radius: 8px;
+  margin: 6px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.schedule-day .talk.separator-keynote {
+  background: #e9f2ff;
+}
+
+.schedule-day .talk.separator-invited {
+  background: #edf8f2;
+}
+
+.schedule-day .talk.separator-coffee {
+  background: #fff4e5;
+}
+
+.schedule-day .talk.separator-lunch {
+  background: #fff7e1;
+}
 
 @media (max-width: 640px) {
   .day-tabs { overflow-x: auto; }

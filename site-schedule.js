@@ -8,8 +8,57 @@ function escapeScheduleText(value) {
   })[character]);
 }
 
+function splitSpeakerList(value) {
+  const text = String(value || '').trim();
+  if (!text) return [];
+
+  const parts = [];
+  let current = '';
+  let parenthesesDepth = 0;
+
+  for (let index = 0; index < text.length; index += 1) {
+    const character = text[index];
+
+    if (character === '(') {
+      parenthesesDepth += 1;
+      current += character;
+      continue;
+    }
+
+    if (character === ')') {
+      parenthesesDepth = Math.max(0, parenthesesDepth - 1);
+      current += character;
+      continue;
+    }
+
+    if (parenthesesDepth === 0 && character === ',') {
+      const part = current.trim();
+      if (part) parts.push(part);
+      current = '';
+      continue;
+    }
+
+    if (parenthesesDepth === 0 && text.slice(index, index + 5).toLowerCase() === ' and ') {
+      const part = current.trim();
+      if (part) parts.push(part);
+      current = '';
+      index += 4;
+      continue;
+    }
+
+    current += character;
+  }
+
+  const trailing = current.trim();
+  if (trailing) parts.push(trailing);
+
+  return parts
+    .map(part => part.replace(/^and\s+/i, '').trim())
+    .filter(Boolean);
+}
+
 function getSpeakerRecord(value) {
-  const candidates = String(value || '').split(/,\s*(?:and\s+)?|\s+and\s+/)
+  const candidates = splitSpeakerList(value)
     .map(name => name.split(' (')[0].trim())
     .filter(Boolean);
   const tokens = name => name.toLocaleLowerCase().match(/[\p{L}\p{N}]+/gu) || [];
@@ -26,7 +75,7 @@ function getSpeakerRecord(value) {
 }
 
 function makeSpeakerLinks(value) {
-  const names = String(value).split(/,\s*(?:and\s+)?|\s+and\s+/).map(name => name.trim()).filter(Boolean);
+  const names = splitSpeakerList(value);
   return names.map(name => `<a href="#" class="speaker-link" data-speaker="${escapeScheduleText(name)}">${escapeScheduleText(name)}</a>`).join(', ');
 }
 
@@ -91,7 +140,26 @@ function renderScheduleDay(day) {
     const time = item.time || '';
     const row = document.createElement('div');
     const type = String(item.type || '').toLowerCase();
-    row.className = ['talk', type === 'plenary' ? 'plenary' : '', type === 'keynote' ? 'keynote' : '', type.includes('break') ? 'break' : '', type.includes('panel') ? 'panel' : '', !item.time ? 'chairman-row' : ''].filter(Boolean).join(' ');
+    const normalizedTitle = String(title).toLowerCase();
+    const rowClasses = [
+      'talk',
+      type === 'plenary' ? 'plenary' : '',
+      type === 'keynote' ? 'keynote' : '',
+      type.includes('break') ? 'break' : '',
+      type.includes('panel') ? 'panel' : '',
+      !item.time ? 'chairman-row' : ''
+    ];
+
+    if (!item.time) {
+      rowClasses.push('separator-row');
+      if (normalizedTitle.includes('keynote')) rowClasses.push('separator-keynote');
+      else if (normalizedTitle.includes('invited')) rowClasses.push('separator-invited');
+    }
+
+    if (normalizedTitle.includes('coffee break')) rowClasses.push('separator-coffee');
+    if (normalizedTitle.includes('lunch')) rowClasses.push('separator-lunch');
+
+    row.className = rowClasses.filter(Boolean).join(' ');
     const speaker = item.speaker ? makeSpeakerLinks(item.speaker) : '';
     row.innerHTML = `<div class="time">${escapeScheduleText(time)}</div><div class="content"><div class="title">${escapeScheduleText(title)}</div>${speaker ? `<div class="speaker">${speaker}</div>` : ''}</div>`;
     container.appendChild(row);

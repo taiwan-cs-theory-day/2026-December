@@ -91,7 +91,7 @@ Colin Cleveland,plenaryAK,images/speakers/colin.webp,"CentraleSupélec Paris-Sac
 ##
 ## S'huichi Hirahara
 ##
-Shuichi Hirahara,plenaryAK,images/speakers/Hirahara.webp,National Institute of Informatics,Associate Professor,,,"Complexity Theory, Circuit Complexity, Kolmogorov Complexity, Average-case Complexity",,,
+##Shuichi Hirahara,plenaryAK,images/speakers/Hirahara.webp,National Institute of Informatics,Associate Professor,,,"Complexity Theory, Circuit Complexity, Kolmogorov Complexity, Average-case Complexity",,,
 
 
 ##
@@ -105,7 +105,7 @@ In this talk, I will discuss recent progress towards understanding the performan
 ##
 ## H'siang-Hsuan Liu
 ##
-Hsiang-Hsuan Liu,plenaryLZ,images/speakers/Elison.jpg,Utrecht University,Assistant Professor,,,"Combinatorial Optimization, Online Algorithms, Approximation Algorithms",,,
+Hsiang-Hsuan Liu,plenaryAK,images/speakers/Elison.jpg,Utrecht University,Assistant Professor,,,"Combinatorial Optimization, Online Algorithms, Approximation Algorithms",,,
 
 
 ##
@@ -164,6 +164,14 @@ Yi-Shan Wu,plenaryLZ,images/speakers/Yi-Shan.jpg,Academia Sinica,Postdoc Researc
 
 
 ##
+## W'ei-Hsuan Yu
+##
+Wei-Hsuan Yu,plenaryLZ,images/speakers/Wei-Hsuan_Yu.jpg,National Central University,Associate Professor,,,"","The maximum size of binary three-distance codes","We prove that for every (n\ge 24), the maximum size of a binary code of length n with at most three distinct Hamming distances between distinct codewords is (\binom{n}{3}+n). This settles the three-distance case of the few-distance conjecture for the binary Hamming cube, allowing the distances to vary with n. The code consisting of all words of Hamming weight one or three attains the bound and has distance set ({2,4,6}). The threshold (n=24) is sharp, since the dual binary Golay code of length (23) has (2048>\binom{23}{3}+23) codewords and only three nonzero distances. The proof combines a cubic polynomial in the inner product with inertia and linear programming bounds. A rank argument handles the remaining exceptional case in odd dimensions.
+
+This is joint work with Valjakas Djaljapayan and Hao Huang."
+
+
+##
 ## J'ulian Zimmert
 ##
 Julian Zimmert,plenaryLZ,images/speakers/Julian_Zimmert.png,Google Research,Senior Research Scientist,,,"Online Learning, Reinforcement Learning","Change of Measure in Online Linear Optimization","Online Linear Optimization (OLO) is a fundamental problem solved with canonical algorithms such as Follow the Regularized Leader (FTRL) or Online Mirror Descent (OMD). 
@@ -171,4 +179,23 @@ Julian Zimmert,plenaryLZ,images/speakers/Julian_Zimmert.png,Google Research,Seni
 Many sequential decision problems are solved by reducing them to OLO. While this strategy has proven extremely successful, regret components external to OLO sometimes lead to suboptimal overall regret. In a surprising number of distinct problems, a change-of-measure would immediately resolve the issue. 
 
 This talk presents the linear change-of-measure technique for FTRL and OMD. Although this technique isn't new, it is surprisingly little known and people continue to derive complicated solutions to problems that change-of-measure trivially resolves. "
+
+
+##
+## C'hun-Chi Chien
+##
+Chun-Chi Chien,light,images/speakers/Chun-Chi_Chien.jpg,National Yang-Ming Chiao-Tung University,MS Student,,,"",
+
+
+##
+## Y'i-Hsun Chiu
+##
+Yi-Hsun Chiu,light,images/speakers/Yi-Hsun_Chiu.jpg,National Yang-Ming Chiao-Tung University,MS Student,,,"",
+
+
+##
+## J'in-Yu Lin
+##
+Jin-Yu Lin,light,images/speakers/Jin-Yu_Lin.jpg,National Yang-Ming Chiao-Tung University,MS Student,,,"",
+
 
